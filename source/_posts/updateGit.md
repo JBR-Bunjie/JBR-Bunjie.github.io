@@ -4,6 +4,12 @@ date: 2021-09-7 23:59:53
 tags:
   - Git
 feature: true
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+author:
+  name: JBR-Bunjie
+  socials:
+    bilibili: https://space.bilibili.com/415377461
+	github: https://github.com/JBR-Bunjie
 ---
 那么现在，如果我的就电脑上已经安装了一个version为2.31.1的git
 
@@ -21,11 +27,11 @@ feature: true
 
 > C;\\> git update
 
-![image-20210907170607746](\images\image-20210907170607746.png)
+![image-20210907170607746](/images/image-20210907170607746.png)
 
 至于更低的，就只能先卸载旧版本再重装了，它太古董了
 
 等待你的进程完成即可
 
-![image-20210907171745526](\images\image-20210907171745526.png)
+![image-20210907171745526](/images/image-20210907171745526.png)
 
