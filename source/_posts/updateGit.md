@@ -5,11 +5,6 @@ tags:
   - Git
 feature: true
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
-author:
-  name: JBR-Bunjie
-  socials:
-    bilibili: https://space.bilibili.com/415377461
-	github: https://github.com/JBR-Bunjie
 ---
 那么现在，如果我的就电脑上已经安装了一个version为2.31.1的git
 

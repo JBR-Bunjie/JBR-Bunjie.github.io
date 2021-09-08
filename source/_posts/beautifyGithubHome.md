@@ -5,11 +5,6 @@ tags:
   - GitHub
 feature: true
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
-author:
-  name: JBR-Bunjie
-  socials:
-    bilibili: https://space.bilibili.com/415377461
-	github: https://github.com/JBR-Bunjie
 ---
 一般来说，GitHub主页是很简陋枯燥又单调的：
 

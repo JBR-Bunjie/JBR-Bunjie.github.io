@@ -17,7 +17,7 @@ site:
   language: cn
   multi_language: true
   logo: https://img-blog.csdnimg.cn/20210313122054101.png
-  avatar: https://img-blog.csdnimg.cn/20210313122054101.png
+  avatar: https://avatars.githubusercontent.com/u/90251718?v=4
   beian:
     number: ''
     link: ''
@@ -70,10 +70,10 @@ socials:
   ##! Example:
   ##! --- Using SVG
     bilibili:
-      icon: "/svg/bilibili-fill.svg"
+      icon: /svg/bilibili-fill.svg
       link: https://space.bilibili.com/415377461
     github: 
-      icon: "/svg/social_github.svg"
+      icon: /svg/social_github.svg
       link: https://github.com/JBR-Bunjie
   
   ##! --- Using IconFont
