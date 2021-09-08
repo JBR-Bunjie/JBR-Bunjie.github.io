@@ -114,7 +114,7 @@ gitalk:
   id: uid
   language: cn
   distractionFreeMode: true
-  recentComment: false
+  recentComment: true
   proxy: ''
 
 # Valine comment plugin (recommended!)
