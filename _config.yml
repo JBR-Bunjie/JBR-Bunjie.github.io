@@ -103,6 +103,6 @@ theme: aurora
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/JBR-Bunjie/JBR-Bunjie.github.io
+  repo: git@github.com:JBR-Bunjie/JBR-Bunjie.github.io.git
   branch: master
   
