@@ -104,13 +104,13 @@ site_meta:
 
 # For local development only!
 gitalk:
-  enable: false
+  enable: true
   autoExpand: true
-  clientID: ''
-  clientSecret: ''
-  repo: 'dev-blog-comments'
-  owner: 'TriDiamond'
-  admin: ['TriDiamond']
+  clientID: '9f9082fa2e7eee98ca7e'
+  clientSecret: '1b64123ac9e9fc49a9f19a6374c537a549d4eacb'
+  repo: 'JBR-Bunjie.github.io'
+  owner: 'JBR-Bunjie'
+  admin: ['JBR-Bunjie']
   id: uid
   language: cn
   distractionFreeMode: true
@@ -125,12 +125,12 @@ valine:
   app_key:
   avatar: ''
   placeholder: Leave your thoughts behind~
-  visitor: true
+  visitor: false
   lang: en
   avatarForce: false
   meta: ['nick', 'mail']
   requiredFields: []
-  admin: 'TriDiamond'
+  admin: 'JBR-Bunjie'
   recentComment: false
 
 # Enable Busuanzi statistic plugin
