@@ -69,12 +69,12 @@ socials:
   customs:
   ##! Example:
   ##! --- Using SVG
-  bilibili:
-    icon: /svg/bilibili-fill.svg
-    link: https://space.bilibili.com/415377461
-  github: 
-    icon: "/svg/social_github.svg"
-    link: 'https://github.com/TriDiamond'
+    bilibili:
+      icon: "/svg/bilibili-fill.svg"
+      link: https://space.bilibili.com/415377461
+    github: 
+      icon: "/svg/social_github.svg"
+      link: https://github.com/JBR-Bunjie
   
   ##! --- Using IconFont
   # baidu:
@@ -112,9 +112,9 @@ gitalk:
   owner: 'TriDiamond'
   admin: ['TriDiamond']
   id: uid
-  language: en
+  language: cn
   distractionFreeMode: true
-  recentComment: true
+  recentComment: false
   proxy: ''
 
 # Valine comment plugin (recommended!)
@@ -131,7 +131,7 @@ valine:
   meta: ['nick', 'mail']
   requiredFields: []
   admin: 'TriDiamond'
-  recentComment: true
+  recentComment: false
 
 # Enable Busuanzi statistic plugin
 # see http://ibruce.info/2015/04/04/busuanzi/
