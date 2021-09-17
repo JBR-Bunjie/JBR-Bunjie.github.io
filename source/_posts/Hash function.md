@@ -8,7 +8,7 @@ feature: true
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
 # 简明Hash function教程
-<br />
+
 :::warning
 
 请注意！这篇文档是关于散列函数Hash function的，如果需要了解Hash table相关内容请查阅“简明Hash table教程”等相关文章
@@ -172,7 +172,7 @@ D = 0x10325476
 
 ##### 流程介绍：
 
-1. ###### 填充
+###### 填充
 
 首先将原数据进行补长（长度的度量是bits）到一个对512取模的结果为448的数，在补长的过程中，我们先在原数据末尾append "1" bit to message，然后再append "0" bits until message length in bits ≡ 448 (mod 512)
 
@@ -182,7 +182,7 @@ D = 0x10325476
 
 一定要补长(64+1~512)，内容为100…0（如若消息长448，则填充512+64）
 
-2. 计算
+###### 计算
 
 首先把结果分割为N个512位的块：Y0，Y1，…（每一个512位块再细分为16个32比特子组） 
 
