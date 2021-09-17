@@ -3,7 +3,8 @@ title: 更新你的Git版本
 date: 2021-09-7 23:59:53
 tags:
   - Git
-feature: false
+categories:
+  - 配置方法
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
 那么现在，如果我的就电脑上已经安装了一个version为2.31.1的git

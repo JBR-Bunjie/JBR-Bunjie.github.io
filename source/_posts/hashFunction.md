@@ -3,8 +3,9 @@ title: 了解MD5算法！
 date: 2021-09-17 16:38:42
 tags:
   - Hash 
-  - Algorithm
-feature: true
+categories:
+  - 算法
+<!--feature: true-->
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
 # 简明Hash function教程

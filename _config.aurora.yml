@@ -54,8 +54,8 @@ menu:
 #! ---------------------------------------------------------------
 theme:
   dark_mode: true
-  profile_shape: diamond # support `circle`, `diamond`, `rounded`
-  feature: true
+  profile_shape: circle # support `circle`, `diamond`, `rounded`
+  feature: false
   gradient:
     color_1: '#24c6dc'
     color_2: '#5433ff'
@@ -104,10 +104,10 @@ site_meta:
 
 # For local development only!
 gitalk:
-  enable: true
+  enable: false
   autoExpand: true
   clientID: '9f9082fa2e7eee98ca7e'
-  clientSecret: '1b64123ac9e9fc49a9f19a6374c537a549d4eacb'
+  clientSecret: '4d213f1711210a9294bd2062dc02f664205a3112'
   repo: 'JBR-Bunjie.github.io'
   owner: 'JBR-Bunjie'
   admin: ['JBR-Bunjie']
@@ -120,18 +120,18 @@ gitalk:
 # Valine comment plugin (recommended!)
 # see https://valine.js.org/quickstart.html
 valine:
-  enable: false
-  app_id:
-  app_key:
-  avatar: ''
+  enable: true
+  app_id: 'CfMv4H2wyVEvqK8f6JbNV3ux-gzGzoHsz'
+  app_key: 'CAAN0uzwR3HGJ5cQF8Jifzpj'
+  avatar: 'mp'
   placeholder: Leave your thoughts behind~
-  visitor: false
-  lang: en
-  avatarForce: false
+  visitor: true
+  lang: zh-CN
+  avatarForce: true
   meta: ['nick', 'mail']
   requiredFields: []
   admin: 'JBR-Bunjie'
-  recentComment: false
+  recentComment: true
 
 # Enable Busuanzi statistic plugin
 # see http://ibruce.info/2015/04/04/busuanzi/
@@ -139,7 +139,7 @@ busuanzi:
   enable: true
 
 copy_protection:
-  enable: true
+  enable: false
   author:
     cn: 作者
     en: Author

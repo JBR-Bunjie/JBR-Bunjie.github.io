@@ -3,7 +3,9 @@ title: 美化你的GitHub主页！
 date: 2021-09-7 23:58:53
 tags:
   - GitHub
-feature: true
+categories:
+  - 工具美化
+<!--feature: true-->
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
 一般来说，GitHub主页是很简陋枯燥又单调的：
