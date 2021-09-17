@@ -1,14 +1,15 @@
 ---
-title: 美化你的GitHub主页！
+title: 了解MD5算法！
 date: 2021-09-17 16:38:42
 tags:
-  - GitHub
+  - Hash 
+  - Algorithm
 feature: true
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
 # 简明Hash function教程
 
-:::waring
+::: warning
 
 请注意！这篇文档是关于散列函数Hash function的，如果需要了解Hash table相关内容请查阅“简明Hash table教程”等相关文章
 
@@ -35,7 +36,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 > [散列函数](https://zh.wikipedia.org/wiki/散列函数)（Hash function）又称散列算法、哈希函数，是一种从任何一种数据中创建数字“指纹”的方法。
 
-:::tips
+:::tip
 
 请注意！Hash算法并非特指某一种算法，而是所有满足Hash算法的一整类算法的统称
 
