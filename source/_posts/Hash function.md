@@ -8,8 +8,8 @@ feature: true
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
 # 简明Hash function教程
-
-::: warning
+<br />
+:::warning
 
 请注意！这篇文档是关于散列函数Hash function的，如果需要了解Hash table相关内容请查阅“简明Hash table教程”等相关文章
 
