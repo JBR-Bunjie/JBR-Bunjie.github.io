@@ -12,7 +12,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 ## 为什么是python？
 
-一个最重要的原因——简单，快速，容易上手：<img src="./images/PythonBasicGrammarImage/hello-world-in-python.png">
+一个最重要的原因——简单，快速，容易上手：<img src="../images/PythonBasicGrammarImage/hello-world-in-python.png">
 
 你也可以通过著名的开发语言排行榜TIOBE来直观感受Python有多么热门[index | TIOBE - The Software Quality Company](https://www.tiobe.com/tiobe-index/)
 
@@ -50,7 +50,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 ### 从命令行开始！
 
-![image-20210923234720280](./images/PythonBasicGrammarImage/image-20210923234720280-16324120504921.png)
+![image-20210923234720280](../images/PythonBasicGrammarImage/image-20210923234720280-16324120504921.png)
 
 这时，cmd就进入了python的编写模式，支持python 当前版本的所有语法，和python自带的编辑器
 
@@ -72,19 +72,19 @@ print("Hello World")
 
 cmd就会显示：
 
-![image-20210329193537197](./images/PythonBasicGrammarImage/image-20210329193537197.png)
+![image-20210329193537197](../images/PythonBasicGrammarImage/image-20210329193537197.png)
 
 简单吧！相信你一定会爱上python这门简单的语言的
 
 如果你要回到cmd的初始状态，只需要用 quit() 即可
 
-![image-20210329193638362](./images/PythonBasicGrammarImage/image-20210329193638362.png)
+![image-20210329193638362](../images/PythonBasicGrammarImage/image-20210329193638362.png)
 
 #### 什么时候需要使用到命令行？
 
 比如我现在已经编写完成了一个基于python的脚本。在命令行中，我们甚至无需要进入python的编辑模式，只需输入python + 文件路径即可直接执行。一般来说，启动一个ide是很耗费时间的，而这就是我们节约时间的手段。
 
-![image-20210923235953188](./images/PythonBasicGrammarImage/image-20210923235953188.png)
+![image-20210923235953188](../images/PythonBasicGrammarImage/image-20210923235953188.png)
 
 ### 在pycharm中继续：
 
@@ -96,12 +96,12 @@ cmd就会显示：
 
 #### 新建项目
 
-![image-20210329193807978](./images/PythonBasicGrammarImage/image-20210329193807978.png)
+![image-20210329193807978](../images/PythonBasicGrammarImage/image-20210329193807978.png)
 
 #### 对pycharm的一些初始设置：
 
-1. 设置编码：（都改为utf-8）![image-20210329194151198](./images/PythonBasicGrammarImage/image-20210329194151198.png)
-2. 设置新建文件的默认代码和内容：![image-20210330151608813](./images/PythonBasicGrammarImage/image-20210330151608813.png)
+1. 设置编码：（都改为utf-8）![image-20210329194151198](../images/PythonBasicGrammarImage/image-20210329194151198.png)
+2. 设置新建文件的默认代码和内容：![image-20210330151608813](../images/PythonBasicGrammarImage/image-20210330151608813.png)
 
 你可以在PyCharm的官网上找到所有的File template variables：[File template variables | PyCharm (jetbrains.com)](https://www.jetbrains.com/help/pycharm/file-template-variables.html)
 
@@ -109,7 +109,7 @@ cmd就会显示：
 
 前面已经提到过在命令行中执行Python代码，这当然是运行已经编写好的Python程序或脚本的好办法。但是命令行中执行程序后就立刻输出结果并结束程序，那要是程序结束后我还想继续执行更多操作怎么办？
 
-这时候你可能需要用到Python Console功能![image-20210330151923931](./images/PythonBasicGrammarImage/image-20210330151923931.png)
+这时候你可能需要用到Python Console功能![image-20210330151923931](../images/PythonBasicGrammarImage/image-20210330151923931.png)
 
 pycharm中的console就是一个pychon的直接运行环境，这里允许你以解释性的形式逐句输入并运行python代码。值得一提的是，在PyCharm中运行你的Python文件时，默认输出到Python Console中，这意味着你可以在程序结束完成之后接着输入更多内容
 
@@ -151,7 +151,7 @@ pycharm中的console就是一个pychon的直接运行环境，这里允许你以
   
 
 示例：
-![image-20210330152927963](./images/PythonBasicGrammarImage/image-20210330152927963.png)
+![image-20210330152927963](../images/PythonBasicGrammarImage/image-20210330152927963.png)
 
 
 
@@ -163,7 +163,7 @@ Python 中的变量不需要声明。每个变量在使用前都必须赋值，�
 
 > 不过Python中的确存在这些“基本数据类型”如：int，float之类的，并且它们之间都存在着严格的限制
 >
-> 你可以使用 type() 函数来检查当前变量的数据类型：![image-20210330153736850](./images/PythonBasicGrammarImage/image-20210330153736850.png)
+> 你可以使用 type() 函数来检查当前变量的数据类型：![image-20210330153736850](../images/PythonBasicGrammarImage/image-20210330153736850.png)
 
 #### 标准数据类型：
 
@@ -200,9 +200,9 @@ int float...
 
 列表支持：
 
-1. 列表间的拼接![image-20210402172959101](./images/PythonBasicGrammarImage/image-20210402172959101.png)
-2. 定义以列表为元素的列表![image-20210402172939650](./images/PythonBasicGrammarImage/image-20210402172939650.png)
-3. 将整个列表赋给新列表![image-20210402172917361](./images/PythonBasicGrammarImage/image-20210402172917361.png)（也可以使用copy()函数：![image-20210402173226983](./images/PythonBasicGrammarImage/image-20210402173226983.png)）
+1. 列表间的拼接![image-20210402172959101](../images/PythonBasicGrammarImage/image-20210402172959101.png)
+2. 定义以列表为元素的列表![image-20210402172939650](../images/PythonBasicGrammarImage/image-20210402172939650.png)
+3. 将整个列表赋给新列表![image-20210402172917361](../images/PythonBasicGrammarImage/image-20210402172917361.png)（也可以使用copy()函数：![image-20210402173226983](../images/PythonBasicGrammarImage/image-20210402173226983.png)）
 4. 通过append()，entend()，insert()，实现增
 5. 通过pop()，remove()，实现删 
 6. 支持通过截取来获取列表内容（截取参看字符串
@@ -217,7 +217,7 @@ int float...
 
 元组中只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用：
 
-![image-20210402174032001](./images/PythonBasicGrammarImage/image-20210402174032001.png)
+![image-20210402174032001](../images/PythonBasicGrammarImage/image-20210402174032001.png)
 
 :::
 
@@ -253,7 +253,7 @@ int float...
 'b'
 ```
 
-![image-20210402171810502](./images/PythonBasicGrammarImage/image-20210402171810502.png)
+![image-20210402171810502](../images/PythonBasicGrammarImage/image-20210402171810502.png)
 
 ##### 字典：
 
@@ -323,7 +323,7 @@ Python没有 `{ }`，它采用精确的缩进来确定控制语句的执行范�
 
 个人建议使用 *tab* 作为缩进
 
-![image-20210330153314699](./images/PythonBasicGrammarImage/image-20210330153314699.png)
+![image-20210330153314699](../images/PythonBasicGrammarImage/image-20210330153314699.png)
 
 python没有分号：“ ; ”， 语句间几乎没有大括号，代价是精确的缩进！
 
@@ -387,7 +387,7 @@ else:
 
 例一：<img src="./006faQNTgw1f5wnm0mcxrg30ci07o47l.gif">
 
-例二：![image-20210402174928766](./images/PythonBasicGrammarImage/image-20210402174928766.png)
+例二：![image-20210402174928766](../images/PythonBasicGrammarImage/image-20210402174928766.png)
 
 
 
@@ -458,7 +458,7 @@ pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple/
 :::warning
 
 特别提醒！
-python中没有像c语言一样的自加运算！![image-20210402161704512](./images/PythonBasicGrammarImage/image-20210402161704512.png)
+python中没有像c语言一样的自加运算！![image-20210402161704512](../images/PythonBasicGrammarImage/image-20210402161704512.png)
 
 :::
 
@@ -477,11 +477,11 @@ python中没有像c语言一样的自加运算！![image-20210402161704512](./im
 
 | 运算符 | 逻辑表达式 | 描述（令a=10， b=20）                                        | 实例                                                         |
 | :----- | :--------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| and    | x and y    | 布尔"与" - 如果 x 为 False，x and y 返回 x 的值，否则返回 y 的计算值。 | (a and b) 返回 20。![image-20210402163513449](./images/PythonBasicGrammarImage/image-20210402163513449.png) |
+| and    | x and y    | 布尔"与" - 如果 x 为 False，x and y 返回 x 的值，否则返回 y 的计算值。 | (a and b) 返回 20。![image-20210402163513449](../images/PythonBasicGrammarImage/image-20210402163513449.png) |
 | or     | x or y     | 布尔"或" - 如果 x 是 True，它返回 x 的值，否则它返回 y 的计算值。(与“与运算恰好相反”) | (a or b) 返回 10。                                           |
 | not    | not x      | 布尔"非" - 如果 x 为 True，返回 False 。如果 x 为 False，它返回 True。 | not(a and b) 返回 False                                      |
 
-> 补充说明：![image-20210402163342743](./images/PythonBasicGrammarImage/image-20210402163342743.png)![image-20210402163401305](./images/PythonBasicGrammarImage/image-20210402163401305.png)
+> 补充说明：![image-20210402163342743](../images/PythonBasicGrammarImage/image-20210402163342743.png)![image-20210402163401305](../images/PythonBasicGrammarImage/image-20210402163401305.png)
 >
 
 #### 成员运算符：
@@ -502,7 +502,7 @@ python中没有像c语言一样的自加运算！![image-20210402161704512](./im
 | is     | is 是判断两个标识符是不是引用自一个对象      | **x is y**, 类似 **id(x) == id(y)** , 如果引用的是同一个对象则返回 True，否则返回 False |
 | is not | is not 是判断两个标识符是不是引用自不同对象  | **x is not y** ， 类似 **id(a) != id(b)**。如果引用的不是同一个对象则返回结果 True，否则返回 False。 |
 
-![image-20210402163932528](./images/PythonBasicGrammarImage/image-20210402163932528.png)
+![image-20210402163932528](../images/PythonBasicGrammarImage/image-20210402163932528.png)
 
 
 
