@@ -202,7 +202,7 @@ chmod +x post-receive
 
 [Git - Getting Git on a Server (git-scm.com)](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server)
 
-[Accessing files of a repository from the Git server - Stack Overflow
+[Accessing files of a repository from the Git server - Stack Overflow](https://stackoverflow.com/questions/20939430/accessing-files-of-a-repository-from-the-git-server)
 
 <iframe src="//player.bilibili.com/player.html?aid=932066812&bvid=BV11M4y1N7q6&cid=383208463&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
 
