@@ -71,13 +71,14 @@ make all：编译所有的目标
 
 make install：安装已编译好的程序
 
-:::warning
+:warning:
 
 By default, `make install` will install all the files in `/usr/local/bin`, `/usr/local/lib` etc.  You can specify an installation prefix other than `/usr/local' using `--prefix', for instance `--prefix=$HOME`
 
-:::
+:warning:
 
 :::
+
 
 ##### 添加到环境变量
 
