@@ -71,11 +71,9 @@ make all：编译所有的目标
 
 make install：安装已编译好的程序
 
-:warning:
+请注意！
 
 By default, `make install` will install all the files in `/usr/local/bin`, `/usr/local/lib` etc.  You can specify an installation prefix other than `/usr/local' using `--prefix', for instance `--prefix=$HOME`
-
-:warning:
 
 :::
 
@@ -123,6 +121,50 @@ git clone git@server-IP:/home/git/test.git
 完成！
 
 ![image-20211003154821032](../images/Git-image-20211003154821032.png)
+
+
+
+### 限制git用户登录：
+
+有的时候我们并不希望用户直接通过git用户的账号以及密码来直接通过SSH登录Linux主机，我们该怎么做？
+
+#### 方法一：禁止Git用户通过ssh直接登录
+
+但是很显然我们不能使用这种方法——当我们禁止Git用户登录时，绝大部分正常的Git操作包括git clone，git pull等都无法正常进行了
+
+#### 方法二：禁止Git用户进入bash
+
+编辑/etc/passwd这个文件，在文件末尾可以找到类似这样的行：
+
+```bash
+# 原行： 
+git:x:1002:1002::/home/git:/bin/sh      
+----------------------------------------------------------
+# 更改为：
+git:x:1002:1002::/home/git:/usr/bin/git-shell
+```
+
+把/bin/sh改为/usr/bin/git-shell，这样git这个账户就只能用来克隆或者推送数据到git仓库中了，而不能用它来登录到主机。
+
+:::tip
+
+当我们引用git-shell时，我们仍然需要使用 **ln** 命令来为我们安装于 /usr/local/git 下的文件创建软链接：
+
+```bash
+ln -s /usr/local/git/bin/git-shell /usr/bin/git-shell
+```
+
+:::
+
+重启服务器：
+
+之后，当我们再次通过git用户登录时，便会报：
+
+```powershell
+fatal: Interactive git shell is not enabled.
+hint: ~/git-shell-commands should exist and have read and execute access.
+Connection to x.x.x.x closed.
+```
 
 
 
