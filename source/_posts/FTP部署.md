@@ -177,18 +177,6 @@ netstat -antup | grep ftp
    listen=YES
    ```
 
-   :::tip
-
-   什么是<a href="#SELinux">SELinux</a>？
-
-   Security-Enhanced Linux (SELinux) is a security architecture for <a href="#what-is-linux">Linux® systems</a> that allows administrators to have more control over who can access the system. It was originally developed by the United States National Security Agency (NSA) as a series of patches to the <a href="#linux-kernel">Linux kernel</a> using Linux Security Modules (LSM). 
-
-   SELinux was released to the open source community in 2000, and was integrated into the upstream Linux kernel in 2003.
-
-   SELinux(Security-Enhanced Linux) 是美国国家安全局（NSA）对于强制访问控制的实现，是 Linux历史上最杰出的新安全子系统
-
-   :::
-
 2. 在`listen_ipv6=YES`行首添加`#`来将此功能注释掉
 
    ```bash
@@ -235,8 +223,6 @@ netstat -antup | grep ftp
    systemctl restart vsftpd
    ```
 
-
-
 ##### 设置云服务器安全组
 
 增加新的策略：
@@ -271,7 +257,21 @@ netstat -antup | grep ftp
 
 4. 成功登录后，即可上传及下载文件
 
+#### 更进一步：为多用户配置不同根目录
 
+~~埋坑~~
+
+
+
+
+
+
+
+
+
+**总之仍然是对vsftpd配置文件进行修改来实现**
+
+---
 
 ## 踩坑集合
 
@@ -335,7 +335,19 @@ vim /etc/selinux/config
 
 ![image-20210918235654741](../images/image-20210918235654741-16319806164524.png)
 
-- 最后办法：重启计算机
+:::tip
+
+什么是<a href="#SELinux">SELinux</a>？
+
+Security-Enhanced Linux (SELinux) is a security architecture for <a href="#what-is-linux">Linux® systems</a> that allows administrators to have more control over who can access the system. It was originally developed by the United States National Security Agency (NSA) as a series of patches to the <a href="#linux-kernel">Linux kernel</a> using Linux Security Modules (LSM). 
+
+SELinux was released to the open source community in 2000, and was integrated into the upstream Linux kernel in 2003.
+
+> " SELinux(Security-Enhanced Linux) 是美国国家安全局（NSA）对于强制访问控制的实现，是 Linux历史上最杰出的新安全子系统 "
+
+:::
+
+- 最后办法：重启计算机，因为你之前修改的配置文件可能并没有生效
 
 #### 553 Could not create file
 
@@ -350,7 +362,7 @@ vim /etc/selinux/config
    - 如果磁盘空间不足，将会导致文件无法上传，建议删除磁盘容量较大的文件。
    - 如果磁盘空间正常，请执行下一步。
 
-2. 执行以下命令，检查 FTP 目录是否有写的权限。
+2. 执行以下命令，检查 FTP 目录是否有写的**权限**。
 
    ```bash
    ls -l /home/test      
@@ -404,6 +416,8 @@ local_root=/var/ftp/test #设置本地用户登录后所在的目录
 
 ## 参考资料：
 
+### 部分资源与拓展阅读
+
 [FileZilla - The free FTP solution (filezilla-project.org)](https://filezilla-project.org/)
 
 <span id="SELinux">[What is SELinux? (redhat.com)](https://www.redhat.com/en/topics/linux/what-is-selinux)</span>
@@ -412,3 +426,6 @@ local_root=/var/ftp/test #设置本地用户登录后所在的目录
 
 <span id="linux-kernel">https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel</span>
 
+### 进一步配置：
+
+[vsftpd添加用户并分配不同权限 - 云+社区 - 腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/1447057)
