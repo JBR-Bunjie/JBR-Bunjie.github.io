@@ -1,9 +1,9 @@
 ---
 title: About_Me
 ---
-你好！这里是姜饼人，JBR_Bunjie
+你好！这里是`姜饼人`，`JBR_Bunjie`！
 
-你可以通过邮箱与我取得联系
+你可以通过邮箱`JBR_Bunjie@outlook.com`与我取得联系
 
 <!--
 useless
