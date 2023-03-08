@@ -1,3 +1,19 @@
+# Github特殊仓库：
+
+> 以JBR-Bunjie为例
+
+## 用户名仓库
+
+用户名仓库为: `JBR-Bunjie\JBR-Bunjie`
+
+## 个人博客
+
+个人博客仓库为: `JBR-Bunjie\JBR-Bunjie.github.io`，这个仓库会直接导向网页`JBR-Bunjie.github.io`
+
+## 项目Doc
+
+
+
 示例：
 
 [xlwings - Make Excel Fly! — xlwings dev documentation](https://docs.xlwings.org/en/stable/)
