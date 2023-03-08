@@ -17,8 +17,6 @@ site:
   language: en
   multi_language: true
   logo: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/extra_resources/mudanting_head.jpg
-#! /extra_resources/mudanting_head.jpg
-#! https://img-blog.csdnimg.cn/20210313122054101.png
   avatar: https://avatars.githubusercontent.com/u/90251718?v=4
   beian:
     number: ''
@@ -93,7 +91,7 @@ socials:
 #! @docs https://aurora.tridiamond.tech/guide/theme.html
 #! ---------------------------------------------------------------
 site_meta:
-  cdn: en
+  cdn: cn
   favicon:
   description: '摸爬滚打'
   keywords: 'JBR_Bunjie, Web, Shader, Games'
@@ -107,17 +105,17 @@ site_meta:
 # For local development only!
 gitalk:
   enable: false
-  # autoExpand: true
-  # clientID: '9f9082fa2e7eee98ca7e'
-  # clientSecret: '4d213f1711210a9294bd2062dc02f664205a3112'
-  # repo: 'JBR-Bunjie.github.io'
-  # owner: 'JBR-Bunjie'
-  # admin: ['JBR-Bunjie']
-  # id: uid
-  # language: cn
-  # distractionFreeMode: true
-  # recentComment: false
-  # proxy: ''
+  autoExpand: true
+  clientID: '9f9082fa2e7eee98ca7e'
+  clientSecret: '4d213f1711210a9294bd2062dc02f664205a3112'
+  repo: 'JBR-Bunjie.github.io'
+  owner: 'JBR-Bunjie'
+  admin: ['JBR-Bunjie']
+  id: uid
+  language: cn
+  distractionFreeMode: true
+  recentComment: true
+  proxy: ''
 
 # Valine comment plugin (recommended!)
 # see https://valine.js.org/quickstart.html

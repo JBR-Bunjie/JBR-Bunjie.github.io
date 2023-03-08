@@ -1,3 +1,16 @@
+---
+title: 创建Django项目
+date: 2022-12-23 12:23:23
+tags:
+  - Python
+  - Django
+  - Windows Powershell
+categories:
+  - Backend
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 ### Step 0. figure out the environment of your computer 
 
 - editor: vs code
@@ -78,6 +91,8 @@ Restricted 执行策略不允许任何脚本运行。AllSigned 和 RemoteSigned 
 以管理员身份打开`PowerShell` 输入 `**set-executionpolicy remotesigned**`
 
 就可以正常在 `PowerShell` 中运行 `ps1` 文件了
+
+> [powershell - Set-ExecutionPolicy unrestricted permission denied - Stack Overflow](https://stackoverflow.com/questions/72144882/set-executionpolicy-unrestricted-permission-denied)
 
 4. 退出
 
