@@ -23,11 +23,11 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 > C;\\> git update
 
-![image-20210907170607746](../images/image-20210907170607746.png)
+![image-20210907170607746](image-20210907170607746.png)
 
 至于更低的，就只能先卸载旧版本再重装了，它太古董了
 
 等待你的进程完成即可
 
-![image-20210907171745526](../images/image-20210907171745526.png)
+![image-20210907171745526](image-20210907171745526.png)
 

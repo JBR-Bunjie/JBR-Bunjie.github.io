@@ -1,3 +1,15 @@
+---
+title: learningOpenGl Chapter 1.5
+date: 2023-3-8 10:21:08
+tags:
+  - Opengl
+  - Shader
+categories:
+  - TA
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # 1.5 Shaders
 
 > 着色器(Shader)是运行在GPU上的小程序。这些小程序为图形渲染管线的某个特定部分而运行。

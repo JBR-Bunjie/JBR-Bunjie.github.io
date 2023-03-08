@@ -1,3 +1,15 @@
+---
+title: learningOpenGl Chapter 1.6
+date: 2023-3-8 10:21:08
+tags:
+  - Opengl
+  - Shader
+categories:
+  - TA
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # 1.6 Texture
 
 ## 1.6.1 纹理坐标与纹理的应用

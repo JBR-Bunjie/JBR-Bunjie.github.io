@@ -1,4 +1,18 @@
-这份教程来自网站：[LearnOpenGL-CN](https://learnopengl-cn.readthedocs.io/zh/latest/)，是[Learn OpenGL, extensive tutorial resource for learning Modern OpenGL](https://learnopengl.com/)的早期译文
+---
+title: learningOpenGl 0
+date: 2023-3-8 10:21:08
+tags:
+  - Opengl
+  - Shader
+categories:
+  - TA
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
+# OpenGL学习记录
+
+这份笔记对应的教程来自网站：[LearnOpenGL-CN](https://learnopengl-cn.readthedocs.io/zh/latest/)，是[Learn OpenGL, extensive tutorial resource for learning Modern OpenGL](https://learnopengl.com/)的早期译文
 
 同时辅以视频教程：
 
