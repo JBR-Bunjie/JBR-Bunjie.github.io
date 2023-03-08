@@ -1,3 +1,14 @@
+---
+title: Chapter 2 of Computer Network
+date: 2022-11-23 12:23:23
+tags:
+  - Computer Network
+categories:
+  - Protocol Theory
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 > ## **课前思考**
 >
 > 如何在各自独立、相互平等的计算机系统之间有条不紊的通信？

@@ -1,3 +1,14 @@
+---
+title: 中国邮递员问题
+date: 2022-12-23 12:23:23
+tags:
+  - Shortest Route
+categories:
+  - Algorithm
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # The Route of the Postman
 
 ## Reference

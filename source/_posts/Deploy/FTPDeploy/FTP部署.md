@@ -5,7 +5,7 @@ tags:
   - FTP
 categories:
   - 配置方法
-<!--feature: true-->
+feature: true
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
 # 建立一个FTP服务器吧！

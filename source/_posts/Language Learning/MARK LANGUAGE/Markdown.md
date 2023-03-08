@@ -1,3 +1,14 @@
+---
+title: Markdown type
+date: 2022-12-23 12:23:23
+tags:
+  - Markdown
+categories:
+  - Coding Language
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 我展示的是一级标题
 =================
 
@@ -119,32 +130,33 @@ $(document).ready(function () {
 ```
 
 **链接**
-这是一个链接 
-[google](https://google.com)
-	或者直接放上地址
-	<https://google.com>
 
-我们可以通过变量来设置一个链接，
-变量赋值在文档末尾进行：
+这是一个链接：[google](https://google.com)
 
-这个链接用 1 作为网址变量 
-[Google][1]
-这个链接用 runoob 作为网址变量 
+或者直接放上地址：<https://google.com>
 
-[Runoob][runoob]
-然后在文档的结尾为变量赋值（网址）
-
-[1]: http://www.google.com/
-[runoob]: http://www.runoob.com/
+> 还可以通过变量来设置一个链接，变量赋值在文档末尾进行：
+>
+> 这个链接用 1 作为网址变量 [Google][1]
+>
+> 这个链接用 runoob 作为网址变量 [Runoob][runoob]
+>
+> 然后在文档的结尾为变量赋值（网址）
+>
+> [1]: http://www.google.com/
+> [runoob]: http://www.runoob.com/
 
 **图片**
-![alt 属性文本](图片地址 "可选标题")
 
-![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png "RUNOOB")
+```markdown
+![alt 属性文本](图片地址 "可选标题")
+```
+
+![RUNOOB 图标](https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg)
 
 Markdown 还没有办法指定图片的高度与宽度
 如果你需要的话，你可以使用普通的 <img> 标签。
-<img src="http://static.runoob.com/images/runoob-logo.png" width="50%">
+<img src="https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg" width="50%">
 
 **表格**
 
@@ -312,5 +324,5 @@ default
 | $\supseteq$   | \supseteq   |
 | $\times$      | \times      |
 | $\cdot$       | \cdot       |
-| $\sqrt$       | \sqrt       |
+| \sqrt         | \sqrt       |
 

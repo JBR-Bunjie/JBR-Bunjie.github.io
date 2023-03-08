@@ -1,3 +1,14 @@
+---
+title: 拓扑排序
+date: 2022-12-23 12:23:23
+tags:
+  - Sort
+categories:
+  - Algorithm
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 ## 拓扑排序
 
 ### Reference：

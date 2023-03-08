@@ -1,0 +1,20 @@
+---
+title: E-mail格式记录
+date: 2022-12-23 12:23:23
+tags:
+  - E-mail
+categories:
+  - Coding Software
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
+e-mail的格式主要包括4项：
+
+**To**：即这个e-mail发给谁，通常是接受者的电子邮件信箱。
+
+**From**：即这个e-mail是谁发的，通常是发送者的电子邮件信箱。 
+
+**CC**: carbon copy 的缩写，愿意是用复写纸预写副本，在e-mail 中为“抄送”之意，即可同时把此邮件发给其他的人，有时也可写成`copy to`
+
+**Subject**：即主题，也就是这封e-mail的主要内容是什么。

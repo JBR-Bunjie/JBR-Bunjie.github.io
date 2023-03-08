@@ -1,3 +1,14 @@
+---
+title: Dijkstra Algorithm
+date: 2022-12-23 12:23:23
+tags:
+  - Shortest Path Algorithm
+categories:
+  - Algorithm
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # Dijkstra 算法详解
 
 ## 概述

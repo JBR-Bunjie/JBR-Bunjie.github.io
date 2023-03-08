@@ -1,3 +1,14 @@
+---
+title: URL Explanations
+date: 2022-12-23 12:23:23
+tags:
+  - Computer Network
+categories:
+  - Protocol Theory
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 ## General: What is URI? and URL?
 
 [http - What is the difference between a URI, a URL and a URN? - Stack Overflow](https://stackoverflow.com/questions/176264/what-is-the-difference-between-a-uri-a-url-and-a-urn)

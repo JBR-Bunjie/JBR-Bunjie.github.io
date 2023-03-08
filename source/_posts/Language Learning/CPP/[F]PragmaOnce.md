@@ -1,3 +1,14 @@
+---
+title: Cpp `#pragma Once` and `#ifndef`
+date: 2022-12-23 12:23:23
+tags:
+  - CPP
+categories:
+  - Coding Language
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # Source
 
 - 在 C++ 中防止头文件被重复包含时为什么同时使用 #ifndef 和 #pragma once？ - 望山的回答 - 知乎 https://www.zhihu.com/question/40990594/answer/1675549910

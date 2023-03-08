@@ -1,3 +1,14 @@
+---
+title: Chapter 3 of Computer Network
+date: 2022-11-23 12:23:23
+tags:
+  - Computer Network
+categories:
+  - Protocol Theory
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # 0. 课前思考
 
 ## 1. 如何在模拟介质中传输数字信号？

@@ -1,4 +1,13 @@
-
+---
+title: Game Dev Recordings
+date: 2022-12-23 12:23:23
+tags:
+  - Experience Recordings
+categories:
+  - Algorithm
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
 
 ## STAGE 1: Project Setup
 

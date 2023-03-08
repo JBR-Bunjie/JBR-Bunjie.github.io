@@ -1,3 +1,14 @@
+---
+title: Boyer Moore Algorithm
+date: 2022-12-23 12:23:23
+tags:
+  - String Processing
+categories:
+  - Algorithm
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # Boyer Moore Algorithm
 
 ## General

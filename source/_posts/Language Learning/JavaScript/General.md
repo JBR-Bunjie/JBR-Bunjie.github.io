@@ -1,1 +1,0 @@
-[javascript-tutorial/zh.javascript.info: 现代 JavaScript 教程（The Modern JavaScript Tutorial） (github.com)](https://github.com/javascript-tutorial/zh.javascript.info#readme)

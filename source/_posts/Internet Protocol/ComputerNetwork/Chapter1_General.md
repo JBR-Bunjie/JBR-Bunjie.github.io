@@ -1,3 +1,14 @@
+---
+title: Chapter 1 of Computer Network
+date: 2022-11-23 12:23:23
+tags:
+  - Computer Network
+categories:
+  - Protocol Theory
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # 1. Beginning
 
 ## Questions

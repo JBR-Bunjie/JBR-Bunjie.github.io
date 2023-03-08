@@ -1,3 +1,14 @@
+---
+title: Sugiyama Algorithm
+date: 2022-12-23 12:23:23
+tags:
+  - Auto Layout
+categories:
+  - Algorithm
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # 划时代的自动布局算法：sugiyama算法
 
 ## sugiyama algorithm steps

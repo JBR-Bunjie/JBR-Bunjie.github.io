@@ -1,10 +1,10 @@
 ---
-title: 了解Hash function！
-date: 2021-09-17 16:38:42
+title: Hash Function
+date: 2022-12-23 12:23:23
 tags:
-  - Hash 
+  - Hash
 categories:
-  - 算法
+  - Algorithm
 <!--feature: true-->
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---

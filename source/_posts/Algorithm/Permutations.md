@@ -1,3 +1,14 @@
+---
+title: 全排列
+date: 2022-12-23 12:23:23
+tags:
+  - 穷举
+categories:
+  - Algorithm
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # Permutations - 全排列
 
 顾名思义，就是找出当前元素所有可行的序列

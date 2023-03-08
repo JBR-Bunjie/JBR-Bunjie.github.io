@@ -1,3 +1,14 @@
+---
+title: Chapter 6 of Computer Network
+date: 2022-11-23 12:23:23
+tags:
+  - Computer Network
+categories:
+  - Protocol Theory
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # 1. 课堂提问
 
 ## 1. **说说你**对静态路由和动态路由的认识

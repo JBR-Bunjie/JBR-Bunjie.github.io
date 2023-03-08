@@ -1,3 +1,14 @@
+---
+title: Catalan Number
+date: 2022-12-23 12:23:23
+tags:
+  - String Processing
+categories:
+  - Algorithm
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 wikipedia-en: [Catalan number - Wikipedia](https://en.wikipedia.org/wiki/Catalan_number?wprov=srpw1_0)
 
 wikipedia-cn:[卡塔兰数 - 维基百科，自由的百科全书 (wikipedia.org)](https://zh.wikipedia.org/wiki/卡塔兰数)

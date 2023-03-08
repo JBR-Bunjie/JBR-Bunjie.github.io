@@ -9,14 +9,16 @@
 #！ @docs https://aurora.tridiamond.tech/guide/configuration.html
 #! ---------------------------------------------------------------
 site:
-  subtitle: JBR_Bunjie's Blog
+  subtitle: JBR_Bunjie
   author: JBR_Bunjie
-  nick: 姜饼人的小小屋
-  description: 仿生程序员会在光环上遇见乐正绫吗？
+  nick: 姜饼屋
+  description: 仿生程序员会在光环上遇见AI乐正绫吗？
   link: '/'
-  language: cn
+  language: en
   multi_language: true
-  logo: https://img-blog.csdnimg.cn/20210313122054101.png
+  logo: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/extra_resources/mudanting_head.jpg
+#! /extra_resources/mudanting_head.jpg
+#! https://img-blog.csdnimg.cn/20210313122054101.png
   avatar: https://avatars.githubusercontent.com/u/90251718?v=4
   beian:
     number: ''
@@ -91,10 +93,10 @@ socials:
 #! @docs https://aurora.tridiamond.tech/guide/theme.html
 #! ---------------------------------------------------------------
 site_meta:
-  cdn: cn
+  cdn: en
   favicon:
-  description: '正在底层摸爬滚打'
-  keywords: 'JBR_Bunjie, Web技术, Blog'
+  description: '摸爬滚打'
+  keywords: 'JBR_Bunjie, Web, Shader, Games'
   author: 'JBR_Bunjie'
 
 #! ---------------------------------------------------------------
@@ -105,17 +107,17 @@ site_meta:
 # For local development only!
 gitalk:
   enable: false
-  autoExpand: true
-  clientID: '9f9082fa2e7eee98ca7e'
-  clientSecret: '4d213f1711210a9294bd2062dc02f664205a3112'
-  repo: 'JBR-Bunjie.github.io'
-  owner: 'JBR-Bunjie'
-  admin: ['JBR-Bunjie']
-  id: uid
-  language: cn
-  distractionFreeMode: true
-  recentComment: true
-  proxy: ''
+  # autoExpand: true
+  # clientID: '9f9082fa2e7eee98ca7e'
+  # clientSecret: '4d213f1711210a9294bd2062dc02f664205a3112'
+  # repo: 'JBR-Bunjie.github.io'
+  # owner: 'JBR-Bunjie'
+  # admin: ['JBR-Bunjie']
+  # id: uid
+  # language: cn
+  # distractionFreeMode: true
+  # recentComment: false
+  # proxy: ''
 
 # Valine comment plugin (recommended!)
 # see https://valine.js.org/quickstart.html
@@ -136,10 +138,10 @@ valine:
 # Enable Busuanzi statistic plugin
 # see http://ibruce.info/2015/04/04/busuanzi/
 busuanzi:
-  enable: true
+  enable: false
 
 copy_protection:
-  enable: false
+  enable: true
   author:
     cn: 作者
     en: Author
@@ -155,7 +157,7 @@ copy_protection:
 #! @docs https://aurora.tridiamond.tech/guide/site-meta.html#custom-meta
 #! ---------------------------------------------------------------
 aurora_bot:
-  enable: true
+  enable: false
   locale: cn
   bot_type: dia
 

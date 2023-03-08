@@ -1,3 +1,14 @@
+---
+title: R&K Algorithm
+date: 2022-12-23 12:23:23
+tags:
+  - String Processing
+categories:
+  - Algorithm
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 # Rabin–Karp algorithm - 拉宾-卡普算法
 
 ~~拉宾-卡普算法（英語：Rabin–Karp algorithm）或卡普-拉宾算法（Karp–Rabin algorithm）~~

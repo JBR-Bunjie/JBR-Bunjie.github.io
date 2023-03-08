@@ -1,1 +1,0 @@
-[CSS selectors - Learn web development | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
