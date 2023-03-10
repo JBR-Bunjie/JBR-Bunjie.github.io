@@ -1,3 +1,15 @@
+---
+title: 直接利用命令行传输文件
+date: 2022-1-15 11:07:03
+tags:
+  - FTP
+  - SCP
+categories:
+  - Linux
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
 ## FTP命令
 
 ```bash
@@ -53,16 +65,14 @@ scp 是加密的，[rcp](https://www.runoob.com/linux/linux-comm-rcp.html) 是�
 
 ### 语法
 
-```
-scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
-[-l limit] [-o ssh_option] [-P port] [-S program]
-[[user@]host1:]file1 [...] [[user@]host2:]file2
+```bash
+# scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file] [-l limit] [-o ssh_option] [-P port] [-S program][[user@]host1:]file1 [...] [[user@]host2:]file2
 ```
 
 简易写法:
 
-```
-scp [可选参数] file_source file_target 
+```bash
+#scp [可选参数] file_source file_target 
 ```
 
 **参数说明：**
@@ -93,11 +103,11 @@ scp [可选参数] file_source file_target
 
 ```bash
 scp local_file remote_username@remote_ip:remote_folder 
-或者 
+#或者 
 scp local_file remote_username@remote_ip:remote_file 
-或者 
+#或者 
 scp local_file remote_ip:remote_folder 
-或者 
+#或者 
 scp local_file remote_ip:remote_file 
 ```
 
@@ -119,7 +129,7 @@ scp /home/space/music/1.mp3 www.runoob.com:/home/root/others/music/001.mp3
 
 ```bash
 scp -r local_folder remote_username@remote_ip:remote_folder 
-或者 
+#或者 
 scp -r local_folder remote_ip:remote_folder 
 ```
 

@@ -5,6 +5,8 @@ title: About_Me
 
 你可以通过邮箱`JBR_Bunjie@outlook.com`与我取得联系
 
+![mudanting_head.jpg](https://github.com/JBR-Bunjie/JBR-Bunjie/blob/main/extra_resources/mudanting_head.jpg?raw=true)
+
 <!--
 useless
 author:

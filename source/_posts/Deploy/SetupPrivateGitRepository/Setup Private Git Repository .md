@@ -120,7 +120,7 @@ git clone git@server-IP:/home/git/test.git
 
 完成！
 
-![image-20211003154821032](Git-image-20211003154821032.png)
+![image-20211003154821032](../../../images/Deploy/SetupPrivateGitRepository/Git-image-20211003154821032.png)
 
 
 
@@ -174,7 +174,7 @@ Connection to x.x.x.x closed.
 
 工作空间示例：
 
-![image-20211003155529616](Git-image-20211003155529616.png)
+![image-20211003155529616](../../../images/Deploy/SetupPrivateGitRepository/Git-image-20211003155529616.png)
 
 要查看工作空间，我们需要使用一个<a href="#hook">钩子</a>：post-receive钩子
 
@@ -215,11 +215,11 @@ chmod +x post-receive
 # 用ls -alc
 ```
 
-![image-20211003171322547](Git-image-20211003171322547.png)
+![image-20211003171322547](../../../images/Deploy/SetupPrivateGitRepository/Git-image-20211003171322547.png)
 
 之后，用户push提交后，–work-tree参数定义的工作空间就可以看到用户提交的具体内容：
 
-![image-20211003165533697](Git-image-20211003165533697.png)
+![image-20211003165533697](../../../images/Deploy/SetupPrivateGitRepository/Git-image-20211003165533697.png)
 
 ---
 
