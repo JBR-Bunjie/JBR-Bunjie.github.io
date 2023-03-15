@@ -6,7 +6,8 @@ tags:
   - Shader
 categories:
   - TA
-feature: true
+mathjax: true
+<!--feature: true-->
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
 
@@ -86,43 +87,48 @@ cx+dy+t_y\\
 \end{bmatrix}
 $$
 > 此时：
-> $$
-> \displaylines{2D \ Point: \
-> =
-> \left( 
-> x, \ y, \ 1
-> \right)^T\\
-> 2D \ Vector: \ =\left( 
-> x, \ y, \ 0
-> \right)^T
-> }
-> $$
->
-> 
->
+$$
+\displaylines{2D \ Point: \
+=
+\left( 
+x, \ y, \ 1
+\right)^T\\
+2D \ Vector: \ =\left( 
+x, \ y, \ 0
+\right)^T
+}
+$$
+
 > 为什么向量添置的是0而点是1？
 >
 > - 通过简单的运算我们可以发现，如果w分量是0，则平移变换对该对象不造成任何影响——我们对向量的w分量置0是为了保护向量的“不随“平移变换”的这种性质，而Point的w为1则正是为了采用这种性质
 >
 > 基于w分量的原理，我们可以得到：
-> $$
-> \displaylines{Vector \ + \ Vector = Vector\\
-> Point \ - \  Point = Vector\\
-> Point \ + \ Vector = Point\\
-> Point \ + \  Point = \ ?(此时w分量为2了，这是什么？——人为进一步定义：均分点：)\\\\
-> \begin{pmatrix}
-> x\\
-> y\\
-> w 
-> \end{pmatrix}
-> = 
-> \begin{pmatrix}
-> x/w \\
-> y/w \\
-> 1
-> \end{pmatrix}(w \ne 0)
-> }
-> $$
+
+$$
+\displaylines{Vector \ + \ Vector = Vector\\
+Point \ - \  Point = Vector\\
+Point \ + \ Vector = Point\\
+Point \ + \  Point = \ ? \\
+}
+$$
+
+> 当Point + Point时，w分量为2了，这能代表什么？——我们人为地定义w用于均分：
+$$
+\displaylines{
+\begin{pmatrix}
+x\\
+y\\
+w 
+\end{pmatrix}
+= 
+\begin{pmatrix}
+x/w \\
+y/w \\
+1
+\end{pmatrix}(w \ne 0)
+}
+$$
 
 我们把形如上方的运算方式称为`仿射变换`，`Affine Transformations`，它采用齐次坐标
 
@@ -134,19 +140,19 @@ Scale(s_x, \ s_y) =
 s_x & 0 & 0\\
 0 & x_y & 0\\
 0 & 0 & 1
-\end{pmatrix}\hfill\\
+\end{pmatrix}\\
 Rotation(\alpha) = 
 \begin{pmatrix}
 \cos\alpha & -\sin\alpha & 0\\
 \sin\alpha & \cos\alpha & 0\\
 0 & 0 & 1
-\end{pmatrix}\hfill\\
+\end{pmatrix}\\
 T(t_x, \ t_y)=
 \begin{pmatrix}
 1 & 0 & t_x\\
 0 & 1 & t_y\\
 0 & 0 & 1
-\end{pmatrix}\hfill
+\end{pmatrix}
 }
 $$
 但是，矩阵乘法中虽然没有交换律但是有结合律
@@ -163,17 +169,19 @@ $$
 
 对于原Rotation矩阵：
 $$
+\displaylines{
 Rotation(\theta) =
 \begin{pmatrix}
 \cos\theta & -\sin\theta\\
 \sin\theta & \cos\theta
-\end{pmatrix}\hfill\\
+\end{pmatrix}\\
 Rotation(-\theta) = 
 \begin{pmatrix}
 \cos\theta & \sin\theta\\
 -\sin\theta & \cos\theta
 \end{pmatrix} = 
-Rotation(\theta) ^ T\hfill\\
+Rotation(\theta) ^ T\\
+}
 $$
 即对于旋转矩阵，有逆矩阵等于转置矩阵——这是一个`正交矩阵`
 
@@ -183,8 +191,10 @@ $$
 >
 > 此时A有如下性质：
 > $$
-> A^TA = E \Rightarrow A^T = A^{-1} \hfill\\
-> A^TA = E \Rightarrow \begin{vmatrix} A \end{vmatrix} = 1 \hfill\\
+> \displaylines{
+> A^TA = E \Rightarrow A^T = A^{-1} \\
+> A^TA = E \Rightarrow \begin{vmatrix} A \end{vmatrix} = 1
+> }
 > $$
 > [正交矩阵有哪些性质？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/62155511)
 
@@ -192,49 +202,55 @@ $$
 
 类同1.7.1.1中的二维变换，只是我们需要将2D变换所用的三维齐次坐标改为四维齐次坐标：
 $$
+\displaylines{
 3D \ Point: = (x, \ y, \ z, \ 1)^T\\
 3D \ Vector: = (x, \ y, \ z, \ 0)^T
+}
 $$
 此时的三种变换的矩阵会变为：
 $$
+\displaylines{
 Scale(s_x,\ s_y,\ s_z) = 
 \begin{pmatrix}
 s_x & 0 & 0 & 0\\
 0 & s_y & 0 & 0\\
 0 & 0 & s_z & 0\\
 0 & 0 & 0 & 1
-\end{pmatrix} \hfill \\\\
+\end{pmatrix} \\\\
 Translation(t_x,\ t_y,\ t_z) = 
 \begin{pmatrix}
 1 & 0 & 0 & t_x\\
 0 & 1 & 0 & t_y\\
 0 & 0 & 1 & t_z\\
 0 & 0 & 0 & 1
-\end{pmatrix} \hfill \\
+\end{pmatrix} \\
+}
 $$
 而旋转则分为三种，分别应用于绕x, y, z三轴旋转的情况：
 $$
+\displaylines{
 Rotation_x(\theta) = 
 \begin{pmatrix}
 1 & 0 & 0 & 0\\
 0 & \cos\theta & -\sin\theta & 0\\
 0 & \sin\theta & \cos\theta & 0\\
 0 & 0 & 0 & 1
-\end{pmatrix} \Longleftarrow y \times z \hfill \\\\
+\end{pmatrix} \Longleftarrow y \times z \\\\
 Rotation_y(\theta) = 
 \begin{pmatrix}
 \cos\theta & 0 & \sin\theta & 0\\
 0 & 1 & 0 & 0\\
 -\sin\theta & 0 & \cos\theta & 0\\
 0 & 0 & 0 & 1
-\end{pmatrix} \Longleftarrow z \times x \hfill \\\\
+\end{pmatrix} \Longleftarrow z \times x  \\\\
 Rotation_z(\theta) = 
 \begin{pmatrix}
 \cos\theta & -\sin\theta & 0 & 0\\
 \sin\theta & \cos\theta & 0 & 0\\
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1
-\end{pmatrix} \Longleftarrow x \times y \hfill \\\\
+\end{pmatrix} \Longleftarrow x \times y  \\\\
+}
 $$
 有了基础的绕三轴的旋转，我们可以通过组合，将物体旋转到任意方向上去：
 $$
@@ -298,6 +314,7 @@ $$
 > 同时我们也可以相反地利用**R^-1^_view.rotate**矩阵实现从摄像机空间到世界空间的逆变换
 
 $$
+\displaylines{
 摄像机世界空间主轴坐标构成的旋转矩阵：R_{example}^{(-1)} = \begin{pmatrix}
 T_x & B_x & N_x\\
 T_y & B_y & N_y\\
@@ -320,10 +337,12 @@ T_x & T_y & T_z\\
 B_x & B_y & B_z\\
 N_z & N_y & N_z
 \end{pmatrix}
+}
 $$
 
 这样，便有完整的变换如下：
 $$
+\displaylines{
 R_{view.rotate}^{-1} = \begin{pmatrix}
 x_{\hat{g}\times\hat{t}} & x_t & x_{-g}\\
 y_{\hat{g}\times\hat{t}} & y_t & y_{-g}\\
@@ -347,6 +366,7 @@ x_{-g} & y_{-g} & z_{-g} & 0\\
 0 & 0 & 1 & -P_{camera_z}\\
 0 & 0 & 0 & 1
 \end{pmatrix}
+}
 $$
 
 ##### 1.7.1.2.2.2 Projection transformation - 投影变换

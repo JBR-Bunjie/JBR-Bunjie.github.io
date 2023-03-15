@@ -5,7 +5,7 @@ tags:
   - Git
 categories:
   - 配置方法
-feature: true
+<!--feature: true-->
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
 # 云服务器上的私有Git仓库搭建
