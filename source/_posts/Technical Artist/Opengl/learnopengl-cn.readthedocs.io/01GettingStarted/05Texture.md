@@ -1,6 +1,6 @@
 ---
 title: learningOpenGl Chapter 1.6
-date: 2023-3-8 10:21:08
+date: 2023-3-8 10:25:08
 tags:
   - Opengl
   - Shader

@@ -1,6 +1,6 @@
 ---
 title: learningOpenGl Chapter 1.7
-date: 2023-3-8 10:21:08
+date: 2023-3-8 10:26:08
 tags:
   - Opengl
   - Shader
@@ -285,11 +285,44 @@ $$
 
 目的：将摄像头移动至世界中心
 过程：做“将原点移动至当前摄像头位置的“的**逆变换**
+原因：我们很难直接求出从世界空间转换到摄像机空间的旋转矩阵，那么鉴于
+
+- **旋转矩阵本身的特殊性**
+- 旋转后最终结果必定为 *x: (1, 0, 0); y: (0, 1, 0); z: (0, 0, 1)*
+- 旋转前(世界空间下的)摄像机的x, y, z轴已知
+
+那么，我们可以利用以上信息构建出**从摄像机空间变换到世界空间**的旋转矩阵，再将该矩阵转置得到目标矩阵
 
 > 利用R_view.rotate，我们将世界空间变换到摄像机空间
 >
-> 同时我们也可以相反地利用R^-1^_view.rotate矩阵实现从摄像机空间到世界空间的逆变换
+> 同时我们也可以相反地利用**R^-1^_view.rotate**矩阵实现从摄像机空间到世界空间的逆变换
 
+$$
+摄像机世界空间主轴坐标构成的旋转矩阵：R_{example}^{(-1)} = \begin{pmatrix}
+T_x & B_x & N_x\\
+T_y & B_y & N_y\\
+T_z & B_z & N_z
+\end{pmatrix}；\\
+摄像机空间下主轴向量：Vector_x\begin{pmatrix}1\\0\\0\end{pmatrix}\\\Downarrow \\
+则世界空间下摄像机主轴向量为：V^{'}_x = R_{example} * Vector_x
+而上述内容的直接表示形式就是：R^{-1} = R_{ViewtoWorld} = \begin{pmatrix}
+| & | & |\\
+T & B & N\\
+| & | & |
+\end{pmatrix}；\\
+
+正因如此，我们可以直接得到：R = R_{WorldToView} = R_{View} = \begin{pmatrix}
+- & T & -\\
+- & B & -\\
+- & N & -
+\end{pmatrix}=\begin{pmatrix}
+T_x & T_y & T_z\\
+B_x & B_y & B_z\\
+N_z & N_y & N_z
+\end{pmatrix}
+$$
+
+这样，便有完整的变换如下：
 $$
 R_{view.rotate}^{-1} = \begin{pmatrix}
 x_{\hat{g}\times\hat{t}} & x_t & x_{-g}\\
