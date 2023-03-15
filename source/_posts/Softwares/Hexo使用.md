@@ -9,7 +9,7 @@ categories:
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
 
-hexo website：[Hexo](https://hexo.io/zh-cn/)
+> Last Change At 3/16/2023
 
 # Hexo从开箱到弃用
 
@@ -106,8 +106,31 @@ hexo deploy
 theme: <yourThemeName>  
 ```
 
+## 让Hexo支持Latex表达式
 
+即便是aurora这种并非原生支持Latex的theme，也可以通过直接改变hexo的
 
+```powershell
+npm uninstall hexo-renderer-marked --save 
 
+# 注意，pandoc并非渲染引擎本身，我们需要先下载并安装pandoc.exe，之后hexo-renderer-pandoc才能通过调用pandoc.exe来生成页面
+npm install hexo-renderer-pandoc --save
+npm install mathjex --save
+```
+
+当安装完成后，并且我们在对应页面的head中插入：
+
+```markdown
+mathjex: true
+```
+
+后，我们便可以通过正常的生成语句来得到正确显示的Latex公式了！
+
+```powershell
+# 以上所有步骤完成后。
+
+hexo g
+hexo s
+```
 
 <iframe src="//player.bilibili.com/player.html?aid=673965978&bvid=BV1xU4y1V7WU&cid=363620657&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
