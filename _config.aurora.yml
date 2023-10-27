@@ -362,8 +362,8 @@ aurora_bot:
 #! ---------------------------------------------------------------
 shiki:
   enable: true
-  theme:
-  externalTheme:
+  theme: github-dark
+  # externalTheme:
   backgroundColor: "#1a1a1a"
 
 #! ---------------------------------------------------------------
