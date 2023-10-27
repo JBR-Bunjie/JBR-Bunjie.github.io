@@ -1,6 +1,19 @@
-### Java语言：
+---
+title: Java 后端路径
+date: 2022-10-15 12:23:23
+tags:
+  - Language Learning
+  - Java
+categories:
+  - Language Learning
+  - Java
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
 
-#### 教程网站：
+# Java 后端路径
+
+## 教程网站：
 
 Oracle Official Site：[The Java™ Tutorials (oracle.com)](https://docs.oracle.com/javase/tutorial/index.html)
 
@@ -8,44 +21,38 @@ Runoob：[Java 教程 | 菜鸟教程 (runoob.com)](https://www.runoob.com/java/j
 
 w3school：[Java Tutorial (w3schools.com)](https://www.w3schools.com/java/default.asp)
 
+## Java语言：
 
+**_集合_**，**_并发_**，**_JVM_**
 
-搜索引擎：
+## Linux：
 
-***集合***，***并发***，***JVM***
+具备相当程度的 Linux 基础。包括**_基础命令_**和**_设计模式_**
 
-### Linux：
+## 数据库：
 
-具备相当程度的Linux基础。包括***基础命令***和***设计模式***
+**_MySql，Redis_**，HBase，MangoDB，ES
 
-### 数据库：
+## 框架：
 
-***MySql，Redis***，HBase，MangoDB，ES
+**_Spring_**，**_SpringMVC_**，**_SpringBoot_**，**_MyBatis_**，**Tomcat**，**Dubbo**
 
-### 框架：
+## MQ：
 
-***Spring***，***SpringMVC***，***SpringBoot***，***MyBatis***，**Tomcat**，**Dubbo**
+**_RocketMQ_**，RabbitMQ，Kafka，ActiveMQ
 
-### MQ：
-
-***RocketMQ***，RabbitMQ，Kafka，ActiveMQ
-
-### 分布式：
+## 分布式：
 
 ZooKeeper，**分布式协议**，如何保持一致性？RPC
 
-### 计算机：
+## 计算机：
 
 **计算机网络**，**OS**，**算法**
 
-### 系统：
-
-
-
-### 系统设计：
+## 系统设计：
 
 DDD（领域设计），系统分层（横向纵向）
 
-### 其他：
+## 其他：
 
 缓存，网络安全

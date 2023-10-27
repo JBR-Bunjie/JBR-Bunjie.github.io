@@ -3,6 +3,7 @@ title: Boyer Moore Algorithm
 date: 2022-12-23 12:23:23
 tags:
   - String Processing
+  - Algorithm
 categories:
   - Algorithm
 <!--feature: true-->

@@ -1,10 +1,13 @@
 ---
-title: Markdown type
-date: 2022-12-23 12:23:23
+title: Markdown
+date: 2021-12-23 12:23:23
 tags:
   - Markdown
+  - Language Learning
 categories:
-  - Coding Language
+  - Language Learning
+  - Markdown
+mathjax: true
 <!--feature: true-->
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---

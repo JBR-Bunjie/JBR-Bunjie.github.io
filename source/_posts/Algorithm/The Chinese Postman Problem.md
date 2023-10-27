@@ -3,6 +3,7 @@ title: 中国邮递员问题
 date: 2022-12-23 12:23:23
 tags:
   - Shortest Route
+  - Algorithm
 categories:
   - Algorithm
 <!--feature: true-->

@@ -1,18 +1,32 @@
-# 目标：使用selenium来解决网页中的大量同质化人工操作内容
+---
+title: selenium自动化爬虫
+date: 2022-12-23 12:23:23
+tags:
+  - Python
+  - Language Learning
+categories:
+  - Python
+  - Language Learning
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
+# 目标：使用 selenium 来解决网页中的大量同质化人工操作内容
 
 ## 零：想好该怎么做：
 
 ### 关于指定网站：
+
 网站是网盘网站，其文件有密码保护，即每个文件都有不同且无规律的受保护地址；同时，这些网页的操作完全重复。
 
-我们可以使用selenium来完成自动化代替重复劳动。
+我们可以使用 selenium 来完成自动化代替重复劳动。
 
-### 关于selenium
+### 关于 selenium
 
-+ 需要使用浏览器的自动化driver
-+ 需要使用键盘输入模拟模块
-+ 需要使用鼠标输入模拟模块
-+ 需要事先了解需要操作的网页元素对象的路径
+- 需要使用浏览器的自动化 driver
+- 需要使用键盘输入模拟模块
+- 需要使用鼠标输入模拟模块
+- 需要事先了解需要操作的网页元素对象的路径
 
 ## 一、准备工作：将所有需要爬取的地址整合到一个列表里：
 
@@ -41,7 +55,7 @@ for i in FileContent:
 #     print(i)
 ```
 
-## 二、用selenium来打开这些网页并模拟操作：
+## 二、用 selenium 来打开这些网页并模拟操作：
 
 ### 打开网页：
 
@@ -56,14 +70,14 @@ wd = webdriver.Edge(r"D:\language\EdgeDriver\msedgedriver.exe") # 创建一个Ed
 try:
     for i in AddressList:
         wd.get(i)
-        
+
         …… # 接第二步
 
         time.sleep(60)
 except Exception as e:
     print(e)
 
-    # driver.get方法会导向给定的URL的页面，WebDriver会等待页面完全加载完(就是onload函数被触发了)，才把程序的控制权交给你的测试或者脚本。 
+    # driver.get方法会导向给定的URL的页面，WebDriver会等待页面完全加载完(就是onload函数被触发了)，才把程序的控制权交给你的测试或者脚本。
     # 但是！如果 你的页面用了太多的AJAX，那么这个机制将会失效，因为原本完整的页面只占用很小一部分时间，而ajax是“页面完成之后的操作”，selenium根本不知道页面到底是什么时候加载完。就像是requests面对众多ajax存在的网页一样
 ```
 
@@ -91,20 +105,17 @@ wd.find_element_by_tag_name('body').send_keys(Keys.Control + 't') # 模拟组合
 	+ 用WebDriverWait结合ExpectedCondition来实现：
 		element = selenium.webdriver.support.ui.WebDriverWait(wd, 10).unitl(
 			selenium.webdriver.support.expected_conditions.presence_of_located(By.ID, "anyIDisOK")
-		) 
+		)
 		# 这段代码将会等待10秒，并在等待过程中，每0.5s就调用一下ExpectedCondition，如果成功则立即返回，否则持续重试直到超时报错，报出错误TimeoutException
 	+ 显示Wait中有许多预期条件，这样子就无需自己编写expected_condition（见文档
-	
+
 隐式Waits
 please forget that，but when I understand，I will c
 """
 ```
 
-
-
 ### 结束
 
-```python 
+```python
 wd.close() # 或者 wb.quit()
 ```
-

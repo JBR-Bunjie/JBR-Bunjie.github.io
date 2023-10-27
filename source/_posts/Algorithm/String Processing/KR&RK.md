@@ -3,8 +3,10 @@ title: R&K Algorithm
 date: 2022-12-23 12:23:23
 tags:
   - String Processing
+  - Algorithm
 categories:
   - Algorithm
+mathjax: true
 <!--feature: true-->
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---

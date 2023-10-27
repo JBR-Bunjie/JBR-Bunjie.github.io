@@ -4,6 +4,7 @@ date: 2023-3-8 10:22:54
 tags:
   - String Processing
   - Regex
+  - Algorithm
 categories:
   - Algorithm
 <!--feature: true-->
@@ -33,8 +34,6 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 [c++ 正则表达式 高性能 - Bing](https://www.bing.com/search?q=c%2b%2b+正则表达式+高性能&qs=SC&pq=c%2b%2b正则表达式+&sc=3-9&cvid=03D982A0A5084F17BB42132E2F94B06F&FORM=QBRE&sp=1)
 
 [c++ locale - Bing](https://www.bing.com/search?q=c%2B%2B+locale&qs=n&form=QBRE&sp=-1&pq=c%2Blocale&sc=0-8&sk=&cvid=913DBECC60374D3F965B8F9271271682)
-
-（为什么Fuck Locale）
 
 ```regex
 [‐\-a-zA-Z0-9\.]+

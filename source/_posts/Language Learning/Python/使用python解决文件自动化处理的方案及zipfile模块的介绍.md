@@ -1,4 +1,19 @@
-## 使用Python解决文件自动化改名和命名
+---
+title: 使用python自动化处理的文件及zipfile模块的介绍
+date: 2022-12-23 12:23:23
+tags:
+  - Python
+  - Language Learning
+categories:
+  - Python
+  - Language Learning
+<!--feature: true-->
+cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
+---
+
+# 使用python自动化处理的文件及zipfile模块的介绍
+
+## 使用 Python 解决文件自动化改名和命名
 
 ### 原因：获取压缩文件的实际名称：
 
@@ -36,7 +51,7 @@ os.chdir(path)		# 进入目标目录
 A = []
 for i in os.walk(path):
     A.append(i)
-    
+
 B = A[0][2] # B按顺序存储了需要修改的所有文件，注意A[0][2]的真正含义！
 
 # 注意，B可能包含已经修改了的文件，这时有两个方案
@@ -74,17 +89,7 @@ for i in B:
     temp = E[count] + ".zip" 	# 注意后缀！
     os.rename(i, temp)
     count = count + 1
-
-    
-    
-    
-    
-以上全部！
 ```
-
-
-
-
 
 ## 有关`zipfile`的常用方法：
 
@@ -102,27 +107,27 @@ for i in B:
    f.close()
    ```
 
-   1.1 `zipfile.`**ZipFile**(*file*, *mode='r'*, *compression=ZIP_STORED*, *allowZip64=True*, *compresslevel=None*, ***, *strict_timestamps=True*)
+   1.1 `zipfile.`**ZipFile**(_file_, _mode='r'_, _compression=ZIP_STORED_, _allowZip64=True_, _compresslevel=None_, *\*\*, *strict_timestamps=True\*)
 
-   Open a ZIP file, where *file* can be a path to a file (a string), a file-like object or a [path-like object](https://docs.python.org/3/glossary.html#term-path-like-object).
+   Open a ZIP file, where _file_ can be a path to a file (a string), a file-like object or a [path-like object](https://docs.python.org/3/glossary.html#term-path-like-object).
 
-   > fileName是没有什么疑问的了。
+   > fileName 是没有什么疑问的了。
    >
-   > mode和一般的文件操作一样,'r'表示打开一个存在的只读ZIP文件；'w'表示清空并打开一个只写的ZIP文件，或创建一个只写的ZIP文件；'a'表示打开一个ZIP文件，并添加内容。
+   > mode 和一般的文件操作一样,'r'表示打开一个存在的只读 ZIP 文件；'w'表示清空并打开一个只写的 ZIP 文件，或创建一个只写的 ZIP 文件；'a'表示打开一个 ZIP 文件，并添加内容。
 
-> > The *mode* parameter should be `'r'` to read an existing file, 
+> > The _mode_ parameter should be `'r'` to read an existing file,
 > >
-> > `'w'` to truncate and write a new file, 
+> > `'w'` to truncate and write a new file,
 > >
-> > `'x'` to exclusively create and write a new file. 
+> > `'x'` to exclusively create and write a new file.
 > >
-> > > If *mode* is `'x'` and *file* refers to an existing file, a [`FileExistsError`](https://docs.python.org/3/library/exceptions.html#FileExistsError) will be raised. 
+> > > If _mode_ is `'x'` and _file_ refers to an existing file, a [`FileExistsError`](https://docs.python.org/3/library/exceptions.html#FileExistsError) will be raised.
 > >
-> > `'a'` to append to an existing file, 
+> > `'a'` to append to an existing file,
 > >
-> > > If *mode* is `'a'` and *file* refers to an existing ZIP file, then additional files are added to it. 
+> > > If _mode_ is `'a'` and _file_ refers to an existing ZIP file, then additional files are added to it.
 > > >
-> > > If *file* does not refer to a ZIP file, then a new ZIP archive is appended to the file. This is meant for adding a ZIP archive to another file (such as `python.exe`).
+> > > If _file_ does not refer to a ZIP file, then a new ZIP archive is appended to the file. This is meant for adding a ZIP archive to another file (such as `python.exe`).
 > > >
 > > > ```python
 > > > #比如：我有一个new.txt文件
@@ -132,13 +137,13 @@ for i in B:
 > > > # 并在外侧改写new.txt的后缀为.zip，发现存在是一个正式的.zip文件且存在一个new.txt
 > > > ```
 > > >
-> > > If *mode* is `'a'` and the file does not exist at all, it is created. 
+> > > If _mode_ is `'a'` and the file does not exist at all, it is created.
 > >
-> > If *mode* is `'r'` or `'a'`, the file should be seekable.
+> > If _mode_ is `'r'` or `'a'`, the file should be seekable.
 
-> compression表示压缩格式，可选的压缩格式只有2个：ZIP_STORE;ZIP_DEFLATED。ZIP_STORE是默认的，表示不压缩；ZIP_DEFLATED表示压缩。
+> compression 表示压缩格式，可选的压缩格式只有 2 个：ZIP_STORE;ZIP_DEFLATED。ZIP_STORE 是默认的，表示不压缩；ZIP_DEFLATED 表示压缩。
 >
-> allowZip64为True时，表示支持64位的压缩，一般而言，在所压缩的文件大于2G时，会用到这个选项；默认情况下，该值为False，因为Unix系统不支持。
+> allowZip64 为 True 时，表示支持 64 位的压缩，一般而言，在所压缩的文件大于 2G 时，会用到这个选项；默认情况下，该值为 False，因为 Unix 系统不支持。
 
 1.2 `zipfile`.**close**()
 
@@ -146,22 +151,20 @@ for i in B:
 
 1.3 `zipfile`.**write**(filename[, arcname[, compress_type]])
 
-> acrname是压缩文件中该文件的名字，默认情况下和filename一样 
+> acrname 是压缩文件中该文件的名字，默认情况下和 filename 一样
 >
-> compress_type的存在是因为zip文件允许被压缩的文件可以有不同的压缩类型。
+> compress_type 的存在是因为 zip 文件允许被压缩的文件可以有不同的压缩类型。
 
 1.4 `zipfile`.**extractall**([path[, member[, password]]])
 
-> path解压缩目录
+> path 解压缩目录
 >
-> member需要解压缩的文件名儿列表
+> member 需要解压缩的文件名儿列表
 >
-> password当zip文件有密码时需要该选项
+> password 当 zip 文件有密码时需要该选项
 >
-> > Extract all members from the archive to the current working directory. 
+> > Extract all members from the archive to the current working directory.
 > >
-> > *path* specifies a different directory to extract to. *members* is optional and must be a subset of the list returned by [`namelist()`](https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.namelist). *pwd* is the password used for encrypted files.
+> > _path_ specifies a different directory to extract to. _members_ is optional and must be a subset of the list returned by [`namelist()`](https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.namelist). _pwd_ is the password used for encrypted files.
 
 1. `ZipFile.`**namelist**()
-
-3. 

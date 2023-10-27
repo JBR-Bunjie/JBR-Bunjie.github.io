@@ -1,1 +1,0 @@
-[How to Deploy Flask Application with Nginx and Gunicorn on Ubuntu 20.04 - RoseHosting](https://www.rosehosting.com/blog/how-to-deploy-flask-application-with-nginx-and-gunicorn-on-ubuntu-20-04/)

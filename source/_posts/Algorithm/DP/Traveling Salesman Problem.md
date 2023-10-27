@@ -1,8 +1,9 @@
 ---
-title: 售货员问题！
+title: 售货员问题
 date: 2022-12-23 12:23:23
 tags:
   - DP
+  - Algorithm
 categories:
   - Algorithm
 <!--feature: true-->

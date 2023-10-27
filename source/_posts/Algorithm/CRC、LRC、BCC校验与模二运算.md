@@ -3,6 +3,7 @@ title: CRC Algorithm
 date: 2022-12-23 12:23:23
 tags:
   - CRC
+  - Algorithm
 categories:
   - Algorithm
 <!--feature: true-->

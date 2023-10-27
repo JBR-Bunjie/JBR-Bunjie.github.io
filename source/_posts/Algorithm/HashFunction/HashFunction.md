@@ -3,6 +3,7 @@ title: Hash Function
 date: 2022-12-23 12:23:23
 tags:
   - Hash
+  - Algorithm
 categories:
   - Algorithm
 <!--feature: true-->

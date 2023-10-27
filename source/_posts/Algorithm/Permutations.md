@@ -2,7 +2,7 @@
 title: 全排列
 date: 2022-12-23 12:23:23
 tags:
-  - 穷举
+  - Algorithm
 categories:
   - Algorithm
 <!--feature: true-->
