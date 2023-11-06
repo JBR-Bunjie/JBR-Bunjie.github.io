@@ -41,7 +41,7 @@ $$
 
 以 A 点为顶点，求到其他点的最短路径。
 
-![img](v2-72ddc44daec6a2916724464ec78ba342_1440w.jpg)
+![img](..\..\images\Algorithm\v2-72ddc44daec6a2916724464ec78ba342_1440w.jpg)
 
 邻接矩阵图
 
@@ -62,7 +62,7 @@ notFound：未求出 最小路径的顶点，里面的值是 到起点的距离
 
 初始，result={A(0)} 中只有起点 A，notFound={B(2),C(∞),D(6)} 中是除了 A 点的其他点，里面的值是到起点的距离（例如 B(2) 代表 B点到起点的距离为 2）
 
-![img](v2-e8e6bf35bb176af1b1a7d9d57ed949e9_r.jpg)
+![img](..\..\images\Algorithm\v2-e8e6bf35bb176af1b1a7d9d57ed949e9_r.jpg)
 
 
 然后，从「未求出最短路径的点」notFound 中取出 最短路径的点 B(2) ，然后通过 B(2) 为桥梁 刷新「未求出最短路径的点」的距离
@@ -83,7 +83,7 @@ notFound={C(∞),D(4)}
 
 「未求出最短路径点」 notFound={C(5),D(4)} ，「已求出最短路径的点」`result={A(0),B(2)} `
 
-![img](v2-69b92f2678598a9570a559f92f65a046_r.jpg)
+![img](..\..\images\Algorithm\v2-69b92f2678598a9570a559f92f65a046_r.jpg)
 
 
 然后，从「未求出最短路径的点」notFound 中取出 最短路径的点 D(4) ，然后通过 D(4) 为桥梁 刷新「未求出最短路径的点」的距离
@@ -92,14 +92,14 @@ notFound={C(∞),D(4)}
 
 「未求出最短路径点」 notFound={C(5)} ，「已求出最短路径的点」result={A(0),B(2),D(4)}
 
-![img](v2-a83ad70c54cb580475bf8eaeaf4a7a5c_r.jpg)
+![img](..\..\images\Algorithm\v2-a83ad70c54cb580475bf8eaeaf4a7a5c_r.jpg)
 
 
 然后，从「未求出最短路径的点」notFound 中取出 最短路径的点 C(5) ，算法结束
 
 result={A(0),B(2),D(4),C(5)} 就是最终所求的 最短距离
 
-![img](v2-564bc4d16069ea3c35ce4a2dfd7a8ded_r.jpg)
+![img](..\..\images\Algorithm\v2-564bc4d16069ea3c35ce4a2dfd7a8ded_r.jpg)
 
 
 3. 代码
@@ -186,4 +186,4 @@ public class Dijkstra {
 
 另题：
 
-![img](v2-6ca1b3a193342af0c9b7750c824d6707_r.jpg)
+![img](..\..\images\Algorithm\v2-6ca1b3a193342af0c9b7750c824d6707_r.jpg)

@@ -7,6 +7,7 @@ tags:
 categories:
   - Unity
   - Shader
+mathjax: true
 <!--feature: true-->
 cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
@@ -249,7 +250,7 @@ vec3 fresnelSchlick(float cosTheta, vec3 F0) {
 
 > 平面对于法向入射的响应或者说基础反射率可以在一些大型数据库中找到，比如[这个](http://refractiveindex.info/)。下面列举的这一些常见数值就是从 Naty Hoffman 的课程讲义中所得到的：
 >
-> |       材料        |    F0�0 (线性)     |    F0�0 (sRGB)     | 颜色 |
+> |       材料        |     F0 (线性)      |     F0 (sRGB)      | 颜色 |
 > | :---------------: | :----------------: | :----------------: | :--: |
 > |        水         | (0.02, 0.02, 0.02) | (0.15, 0.15, 0.15) |      |
 > |  塑料/玻璃（低）  | (0.03, 0.03, 0.03) | (0.21, 0.21, 0.21) |      |

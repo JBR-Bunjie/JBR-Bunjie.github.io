@@ -30,11 +30,11 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
   > 1:
   >
-  > ![img](mergeSort.gif)
+  > ![img](..\..\..\images\Algorithm\mergeSort.gif)
 
   > 2:
   >
-  > ![img](1024555-20161218163120151-452283750.png)
+  > ![img](..\..\..\images\Algorithm\1024555-20161218163120151-452283750.png)
 
 
 

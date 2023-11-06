@@ -28,7 +28,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 >
 > This illustration shows the overall process of serialization:
 >
-> ![Serialization graphic](serialization-process.gif)
+> ![Serialization graphic](..\..\images\Algorithm\serialization-process.gif)
 >
 > The object is serialized to a stream that carries the data. The stream may also have information about the object's type, such as its version, culture, and assembly name. From that stream, the object can be stored in a database, a file, or memory.
 >

@@ -69,7 +69,7 @@ An alternative expression for *Cn* is
 
 则有：
 
-![image-20220126215930311](C:\Users\m1518\OneDrive\文档\Document\Algorithm\CatalanNumberPic01.png)
+![image-20220126215930311](..\..\images\Algorithm\CatalanNumberPic01.png)
 
 易知，所有在直线y = x之下的路径都是合法路径，而所有与y = x + 1有交集的路径都是非法路径
 

@@ -163,7 +163,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 
 
-![img](v2-fd234222bf00f00d841f2078b4a3cd18_1440w.jpg)
+![img](..\..\images\Algorithm\v2-fd234222bf00f00d841f2078b4a3cd18_1440w.jpg)
 
 
 
@@ -177,7 +177,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 
 
-![img](v2-9c025c1b6d3b754f46375968fba3f26e_1440w.jpg)
+![img](..\..\images\Algorithm\v2-9c025c1b6d3b754f46375968fba3f26e_1440w.jpg)
 
 
 
@@ -185,7 +185,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 
 
-![img](v2-2f60503bcb6abedadbe2bf45f70f28ba_1440w.jpg)
+![img](..\..\images\Algorithm\v2-2f60503bcb6abedadbe2bf45f70f28ba_1440w.jpg)
 
 
 
@@ -217,7 +217,7 @@ CRC校验计算速度快，检错能力强，易于用编码器等硬件电路�
 
 
 
-![img](v2-91f148259b466e4a75a10c6607370855_1440w.jpg)
+![img](..\..\images\Algorithm\v2-91f148259b466e4a75a10c6607370855_1440w.jpg)
 
 
 
@@ -267,7 +267,7 @@ REFOUT = TRUE
 
 
 
-![img](v2-2237c19868f68ce99205668ccd9debb5_1440w.jpg)
+![img](..\..\images\Algorithm\v2-2237c19868f68ce99205668ccd9debb5_1440w.jpg)
 
 
 
@@ -275,7 +275,7 @@ REFOUT = TRUE
 
 
 
-![img](v2-be31dd176ba8f5a876b6049babca53ef_1440w.jpg)
+![img](..\..\images\Algorithm\v2-be31dd176ba8f5a876b6049babca53ef_1440w.jpg)
 
 
 
@@ -293,7 +293,7 @@ REFOUT = TRUE
 
 
 
-![img](v2-fe3b5137beac80e83c438af2b1e4a947_1440w.jpg)
+![img](..\..\images\Algorithm\v2-fe3b5137beac80e83c438af2b1e4a947_1440w.jpg)
 
 
 
@@ -336,7 +336,7 @@ int main()
 
 
 
-![img](v2-5e57b35b78dbc8cd5f75be754edab9ba_1440w.jpg)
+![img](..\..\images\Algorithm\v2-5e57b35b78dbc8cd5f75be754edab9ba_1440w.jpg)
 
 
 
@@ -351,7 +351,7 @@ int main()
 
 
 
-![img](v2-056da0822895f32460d981ca6c08357b_1440w.jpg)
+![img](..\..\images\Algorithm\v2-056da0822895f32460d981ca6c08357b_1440w.jpg)
 
 
 

@@ -287,7 +287,7 @@ netstat -antup | grep ftp
 
 示例：
 
-![image-20211002181804382](../../../images/Deploy/FTPDeploy/FTPimage-20211002181804382.png)
+![image-20211002181804382](../../images/Deploy/FTPimage-20211002181804382.png)
 
 :::tip
 
@@ -305,7 +305,7 @@ netstat -antup | grep ftp
 
    - 被动模式：勾选【使用被动 FTP】
 
-     ![image-20211002180657770](../../../images/Deploy/FTPDeploy/FTP-image-20211002180657770.png)
+     ![image-20211002180657770](../../images/Deploy/FTP-image-20211002180657770.png)
 
 2. 打开计算机的 ftp 客户端，如果是 windows 电脑可以直接使用`file explorer`，在路径栏中访问"ftp://xxx.xxx.xxx.xxx（你服务器的地址）"
 
@@ -361,13 +361,13 @@ netstat -antup | grep ftp
 
   如果这条语句的结果是
 
-  ![image-20210918235447255](../../../images/Deploy/FTPDeploy/image-20210918235447255-16319804884733.png)
+  ![image-20210918235447255](../../images/Deploy/image-20210918235447255-16319804884733.png)
 
   代表 SELinux 安全服务处于 disabled 状态，不是这里的错，大概率还是上面四条错误
 
   但是如果是下面这样
 
-![image-20210918235240645](../../../images/Deploy/FTPDeploy/image-20210918235240645-16319803627632.png)
+![image-20210918235240645](../../images/Deploy/image-20210918235240645-16319803627632.png)
 
  ——几乎所有与 ftp 相关的服务都被关闭掉了
 
@@ -381,7 +381,7 @@ vim /etc/selinux/config
 
  把`SELINUX`默认的`permissive`或`enforcing`改为`disabled`
 
-![image-20210918235654741](../../../images/Deploy/FTPDeploy/image-20210918235654741-16319806164524.png)
+![image-20210918235654741](../../images/Deploy/image-20210918235654741-16319806164524.png)
 
 :::tip
 

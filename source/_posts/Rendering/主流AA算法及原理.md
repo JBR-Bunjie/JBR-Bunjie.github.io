@@ -49,7 +49,7 @@ SSAA，即 Super sampling anti-aliasing，有时也称为 full-scene anti-aliasi
 
 下图是 DX11 的光栅化说明文档中的 MSAA 示意图，非常详细地展示了 MSAA 的应用原理。
 
-![image-20231006191532143](C:\Users\m1518\AppData\Roaming\Typora\typora-user-images\image-20231006191532143.png)
+![image-20231006191532143](..\..\images\Rendering\image-20231006191532143.png)
 
 > 关于 MSAA，可以参考：https://zhuanlan.zhihu.com/p/415087003
 

@@ -13,6 +13,11 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 # Advanced CSharp
 
+[Dictionary (microsoft.com)](https://referencesource.microsoft.com/#mscorlib/system/collections/generic/dictionary.cs,d3599058f8d79be0,references)
+
+哈希表、字典、二维数组的区别是什么？ - VTECISBEST的回答 - 知乎
+https://www.zhihu.com/question/266414962/answer/308222427
+
 ## readonly, const & static
 
 ## Virtual, Interface & Abstract

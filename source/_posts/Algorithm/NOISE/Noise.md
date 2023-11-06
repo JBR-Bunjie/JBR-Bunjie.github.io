@@ -23,7 +23,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 - Voronoi Noise
 - Value Noise
 
-![image-20230325210305648](........\source\images\Algorithm\NOISE\001.png)
+![image-20230325210305648](..\..\..\images\Algorithm\001.png)
 _The built-in noise in unity ShaderGraph._
 
 下面，我们试着自己去实现这些噪点算法

@@ -120,33 +120,33 @@ site_meta:
 # For local development only!
 gitalk:
   enable: false
-  autoExpand: true
-  clientID: "9f9082fa2e7eee98ca7e"
-  clientSecret: "4d213f1711210a9294bd2062dc02f664205a3112"
-  repo: "JBR-Bunjie.github.io"
-  owner: "JBR-Bunjie"
-  admin: ["JBR-Bunjie"]
-  id: uid
-  language: cn
-  distractionFreeMode: true
-  recentComment: true
-  proxy: ""
+  # autoExpand: true
+  # clientID: "9f9082fa2e7eee98ca7e"
+  # clientSecret: "4d213f1711210a9294bd2062dc02f664205a3112"
+  # repo: "JBR-Bunjie.github.io"
+  # owner: "JBR-Bunjie"
+  # admin: ["JBR-Bunjie"]
+  # id: uid
+  # language: cn
+  # distractionFreeMode: true
+  recentComment: false
+  # proxy: ""
 
 # Valine comment plugin (recommended!)
 # see https://valine.js.org/quickstart.html
 valine:
-  enable: true
-  app_id: "CfMv4H2wyVEvqK8f6JbNV3ux-gzGzoHsz"
-  app_key: "CAAN0uzwR3HGJ5cQF8Jifzpj"
+  enable: false
+  app_id: OxxbnZfpUcRcK4x9zv0nTw22-MdYXbMMI
+  app_key: DHkd7NTaVRRMqz7vD2uOF2YY
   avatar: "mp"
-  placeholder: Leave your thoughts behind~
+  placeholder: The email is associated with Gravatar! You can comment with your customed avatar through it~
   visitor: true
-  lang: zh-CN
-  avatarForce: true
+  lang: en
+  avatarForce: false
   meta: ["nick", "mail"]
   requiredFields: []
   admin: "JBR-Bunjie"
-  recentComment: true
+  recentComment: false
 
 # Enable Busuanzi statistic plugin
 # see http://ibruce.info/2015/04/04/busuanzi/
