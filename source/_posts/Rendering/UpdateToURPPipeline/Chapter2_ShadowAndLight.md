@@ -17,7 +17,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 这一次我们不再使用 Unity 下的示例工程——让我们现从 Hub 重新创建一个 URP Core 的新项目，并以其为基础进行接下来的工作
 
-![image-20230329202320686](..\..\..\images\Dev\Unity\UpdateToURPPipeline\Chapter2_ShadowAndLight\001.png)
+![image-20230329202320686](../../../images\Dev\Unity\UpdateToURPPipeline\Chapter2_ShadowAndLight\001.png)
 
 _使用 Hub 中的 URP Temple 来创建新项目_
 
@@ -52,7 +52,7 @@ _此属性仅在渲染路径设置为 `Forward` 时可用_
 
 简而言之，“Depth Priming Mode”是一个属性，它决定了 Unity 何时执行深度优化，以改善 GPU 帧时间。
 
-![image-20230329202802662](..\..\..\images\Dev\Unity\UpdateToURPPipeline\Chapter2_ShadowAndLight\002.png)
+![image-20230329202802662](../../../images\Dev\Unity\UpdateToURPPipeline\Chapter2_ShadowAndLight\002.png)
 _Depth Priming Mode_
 
 > This property determines when Unity performs depth priming.

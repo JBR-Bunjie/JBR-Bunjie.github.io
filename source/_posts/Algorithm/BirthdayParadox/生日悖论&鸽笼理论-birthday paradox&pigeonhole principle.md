@@ -26,7 +26,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 每个人生日 **都不同** 的 **阶乘** 形式为：
 
-![img](birthday paradox equation01.svg)
+![img](../../../images/Algorithm/birthday paradox equation01.svg)
 
 故至少有两个人生日相同的概率就是上述结果的补，即：![img](birthday paradox equation02.svg)
 

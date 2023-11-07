@@ -154,7 +154,7 @@ It's important to divide the function into parts so that we can reuse and debug 
 
 And now you can see the template in the right-click menu:
 
-![image-20230409172030993](..\..\images\Dev\Unity\Archives\CustomRightClickMenuAndShaderGUI\001.png)
+![image-20230409172030993](../../images\Dev\Unity\Archives\CustomRightClickMenuAndShaderGUI\001.png)
 
 ## Define the Shader GUI
 

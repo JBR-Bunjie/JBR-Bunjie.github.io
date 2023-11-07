@@ -104,17 +104,17 @@ _WorkflowMode("WorkflowMode", Float) = 1.0
 
 但是奇怪的是，我们的面板上所实在展示的并不是浮点数——是字符串：
 
-![image-20230328205013593](..\..\..\images\Dev\Unity\UpdateToURPPipeline\Chapter3_Lit\001.png)
+![image-20230328205013593](../../../images\Dev\Unity\UpdateToURPPipeline\Chapter3_Lit\001.png)
 _面板上的 `WorkflowMode` 属性对应的并不是浮点是而是字符文字_
 
 这些我们
 
 定义工作流后，我们的 Inspector 面板会发生变化，两种工作流对应的面板如下：
 
-![image-20230328205839615](..\..\..\images\Dev\Unity\UpdateToURPPipeline\Chapter3_Lit\002.png)
+![image-20230328205839615](../../../images\Dev\Unity\UpdateToURPPipeline\Chapter3_Lit\002.png)
 _Specular 工作流下的 Inspector 面板_
 
-![image-20230328205732177](..\..\..\images\Dev\Unity\UpdateToURPPipeline\Chapter3_Lit\003.png)
+![image-20230328205732177](../../../images\Dev\Unity\UpdateToURPPipeline\Chapter3_Lit\003.png)
 _Metallic 工作流下的 Inspector 面板_
 
 可以看到当对应的工作流不同时，我们的 `Surface Input` 下的数据会发生变化。关于 `Surface Input` ，我们后面还会再次看到。

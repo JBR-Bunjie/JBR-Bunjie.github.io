@@ -22,7 +22,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 ### 项目色彩空间设置：
 
-![image-20230316185827423](../../../../images/Dev/Unity/UnityShaderBook/Chapter0/001.png)
+![image-20230316185827423](../../../images/Dev/Unity/UnityShaderBook/Chapter0/001.png)
 
 > 书中的实例都是处于色彩空间为Gamma下的，而在Unity2021.3LTS下默认是Linear空间下的
 

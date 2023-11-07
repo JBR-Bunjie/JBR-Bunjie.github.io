@@ -267,7 +267,7 @@ Shader "Example/URPTutorialTextureShader" {
 
 在URP中，我们可以直接在Shader中拿到 `Depth Texture`：通过在 URP 资源的 General 部分中，启用 `Depth Texture`，我们可以直接在ShaderLab中拿到当前的深度缓冲，并利用它来重建世界坐标：
 
-![在 URP 资源中，启用 Depth Texture](..\..\..\images\Dev\Unity\UpdateToURPPipeline\Chapter1_BasicUnlitShader\001.png)
+![在 URP 资源中，启用 Depth Texture](../../../images\Dev\Unity\UpdateToURPPipeline\Chapter1_BasicUnlitShader\001.png)
 *启用深度缓冲*
 
 具体步骤可以参考以下代码，需要说明的内容已经在注释中注明

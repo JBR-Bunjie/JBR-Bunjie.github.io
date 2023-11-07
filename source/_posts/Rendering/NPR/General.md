@@ -46,7 +46,7 @@ diffuse = lerp(DarkSide, BrightSide, Threshold);
 
 来改写传统的漫反射光照，这样我们就能得到如下效果：
 
-![image-20230406155635370](..\..\..\..\images\Technical Artist\Rendering\NPR\General\StepDiffuse.png)
+![image-20230406155635370](../../../images\Rendering\NPR\General\StepDiffuse.png)
 裁边漫反射结果示意
 
 当然，我们也可以尝试在明暗交界线上做出特殊效果：
@@ -225,7 +225,6 @@ $$
 
 $$
 G=\sqrt[2]{(G_x)^2+(G_y)^2}
-
 $$
 
 这个梯度值越大，说明当前位置像素周围的颜色变化越剧烈，就越有可能是图像的边缘。
@@ -362,9 +361,9 @@ Create 函数会最先执行，我们在这里初始化我们会用到的全部�
 
 > 在米哈游 2017 年的分享中，有这样两张 PPT：
 >
-> ![image-20230729213125901](C:\Users\m1518\OneDrive\DOCUMENTS\JBR-Bunjie.github.io\source\images\Technical Artist\Rendering\NPR\General\007Outline.png)
+> ![image-20230729213125901](../../../images\Rendering\NPR\General\007Outline.png)
 >
-> ![image-20230729213257293](C:\Users\m1518\OneDrive\DOCUMENTS\JBR-Bunjie.github.io\source\images\Technical Artist\Rendering\NPR\General\008Outline.png)
+> ![image-20230729213257293](../../../images\Rendering\NPR\General\008Outline.png)
 >
 > 即，这种 Image Space 的 Outline 更加适用于对场景进行描边，而对于人物，我们会使用基于 Backface 的描边。这些内容与 2019 年的分享内容没有太大变化。
 
@@ -423,14 +422,14 @@ $$
 Specular = L_i * k_s * \sqrt{ \overrightarrow T \cdot \overrightarrow H } ^ {strength}
 $$
 
-![image-20230501160324069](..\..\..\..\images\Technical Artist\Rendering\NPR\General\004.png)
+![image-20230501160324069](../../../images\Rendering\NPR\General\004.png)
 用 Kajiya Kay 模型实现的环形高光，Strength == 64，没有使用 Shift Map，没有使用衰减。（计算 W 型高光需要使用 Shift Map，可用的处理办法可参考：[基于 Kajiya-Kay 模型的毛发渲染 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/135910659))
 
 2. Marschner 模型：[hair-sg03final.pdf (stanford.edu)](http://graphics.stanford.edu/papers/hair/hair-sg03final.pdf)
 
    就 Marschner 模型本身而言，这是一个基于物理的模型。[Marschner Hair Model 论文细读与推导 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/372590873)
 
-![img](..\..\..\..\images\Technical Artist\Rendering\NPR\General\005.png)
+![img](../../../images\Rendering\NPR\General\005.png)
 
 R：反射光线，T：透射光线。R，TT 和 TRT 是三个对毛发反射率产生明显影响部分。
 R： 从头发纤维表面向观察者反弹的光。TT： 折射到头发中并再次向观察者折射的光。TRT：光线折射到头发纤维中，从内表面反射，然后再次向观察者折射。
@@ -463,7 +462,7 @@ $$
 
 ATI 示例代码：
 
-![image-20230501191639629](..\..\..\..\images\Technical Artist\Rendering\NPR\General\006.png)
+![image-20230501191639629](../../../images\Rendering\NPR\General\006.png)
 
 ### 小结：
 
@@ -473,7 +472,7 @@ ATI 示例代码：
 
 ### PBR 材质分析
 
-![image-20230407210359909](..\..\..\..\images\Technical Artist\Rendering\NPR\General\002_PBRInURP.png)
+![image-20230407210359909](../../../images\Rendering\NPR\General\002_PBRInURP.png)
 ASE 在 URP 管线下的默认 PBR 材质输出节点
 
 对于 PBR 预制节点所不能表达的效果，我们有两种解决思路：
@@ -484,7 +483,7 @@ ASE 在 URP 管线下的默认 PBR 材质输出节点
 
    产生无用计算的原因：
 
-   ![image-20230407212230706](..\..\..\..\images\Technical Artist\Rendering\NPR\General\003_UselessCalculations.png)
+   ![image-20230407212230706](../../../images\Rendering\NPR\General\003_UselessCalculations.png)
    If 语句会先计算出括号里面的内容，再根据条件值判断是否接受这个值。这种运行方式与 CPU 不同，CPU 是先根据条件值是否为真，再去判断是否要执行括号内的内容。
 
 和大多数最终的解决方案类似的——⼀种成熟的解决方案是 1 与 2 的结合，即在通用的 Shader 中做出通用特性，每个特性不能消耗太多的计算，而特殊的特性用单独的 Shader。

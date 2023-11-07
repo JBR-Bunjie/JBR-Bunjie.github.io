@@ -22,10 +22,10 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 首先，当我们下载URP资源时，我们的项目的Package中会出现这些内容：
 
-![image-20230408215042373](..\..\..\images\Dev\Unity\SourceCodeAnalysis\URPSourceCode\001.png)
+![image-20230408215042373](../../../images\Dev\Unity\SourceCodeAnalysis\URPSourceCode\001.png)
 *URP资源结构 - com.unity.render-pipelines.universal Part*
 
-![image-20230408215738417](..\..\..\images\Dev\Unity\SourceCodeAnalysis\URPSourceCode\002.png)
+![image-20230408215738417](../../../images\Dev\Unity\SourceCodeAnalysis\URPSourceCode\002.png)
 *URP资源结构 - com.unity.render-pipelines.core Part*
 
 这两个Library一起，组成了我们的URP资源，这也是我们在实际使用时引入资源的两个对应的实际位置：
@@ -153,7 +153,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 1. 屏幕空间差异：当我们使用 `渲染到纹理技术` （render Texture）时，就有可能出现问题，这对应了 `UNITY_UV_STARTS_AT_TOP` 宏
 
-   ![image-20230409155215810](..\..\..\images\Dev\Unity\SourceCodeAnalysis\URPSourceCode\003.png)
+   ![image-20230409155215810](../../../images\Dev\Unity\SourceCodeAnalysis\URPSourceCode\003.png)
 
 2. 
 

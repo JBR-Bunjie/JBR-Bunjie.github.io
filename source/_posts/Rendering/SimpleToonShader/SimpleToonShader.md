@@ -18,7 +18,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 > This repository contains a very simple toon lit shader example, to help people writing their first custom toon lit shader in URP.
 > This example shader's default result(without editing material params) = the following picture
 >
-> ![screenshot](..\..\images\Dev\Unity\SourceCodeAnalysis\SimpleToonShaderCodeAnalysis\001.png)
+> ![screenshot](../../../images/Rendering/001.png)
 >
 > > **About this repository**
 > >
@@ -138,7 +138,7 @@ Varyings VertexShaderWork(Attributes input) {
 
 > 雾效(Fog)是游戏里经常使用的一种效果。Unity 内置的雾效可以产生基于距离的线性或指数雾效。然而，要想在自己编写的顶点/片元着色器中实现这些雾效，我们需要在 Shader 中添加 #pragma multi_compile_fog 指令，同时还需要使用相关的内置宏，例如 UNITY_FOG_COORD、UNITY_TRANSFER_FOG 和 UNTTY_APPLY_FOG 等。这种方法的缺点在于，我们不仅需要为场景中所有物体添加相关的渲染代码，而且能够实现的效果也非常有限。**当我们需要对雾效进行一些个性化操作时，例如使用基于高度的雾效等，仅仅使用 Unity 内置的雾效就变得不再可行**
 
-![image-20230418220205577](..\..\images\Dev\Unity\SourceCodeAnalysis\SimpleToonShaderCodeAnalysis\002.png)
+![image-20230418220205577](../../../images\Rendering\002.png)
 Unity Built-in Fog
 
 关于 Unity Built-in Fog，可参考：[Rendering 14 (catlikecoding.com)](https://catlikecoding.com/unity/tutorials/rendering/part-14/)

@@ -110,7 +110,7 @@ return half4(resultColor.rgb * _Color.rgb, Alpha); //* light.color.rgb
 
 当然，这也意味着我们使用该函数时，应确保加入的 texture 的 `Generate Mip Maps` 选项是勾选上的(当我们加入一张图片时，Unity 会帮我们默认勾选该内容:)
 
-![image-20230331190104741](..\..\images\Dev\Unity\Archives\VolumeCloud\001.png)
+![image-20230331190104741](../../images\Dev\Unity\Archives\VolumeCloud\001.png)
 _Generate Mip Maps 选项_
 
 当做好准备后，我们就可以利用 `tex2Dlod` 来对预生成的 `Mip Maps` 进行采样了：
@@ -131,16 +131,16 @@ _Generate Mip Maps 选项_
 
 我们可以进行一些小小的实验，比和上方展示的结果做对比：
 
-![image-20230331194548990](..\..\images\Rendering\Archives\VolumeCloud\002.png)
+![image-20230331194548990](../../images\Rendering\Archives\VolumeCloud\002.png)
 _t.z\=\=5000, t.w\=\=0，可以发现结果并没有任何变化_
 
-![image-20230331195527727](..\..\images\Rendering\Archives\VolumeCloud\002dot5.png)
+![image-20230331195527727](../../images\Rendering\Archives\VolumeCloud\002dot5.png)
 _t.z\=\=5000, t.w\=\=4，高度感仍然比较明显，同时锯齿的感觉也有所减缓_
 
-![image-20230331195108808](..\..\images\Rendering\Archives\VolumeCloud\003.png)
+![image-20230331195108808](../../images\Rendering\Archives\VolumeCloud\003.png)
 _t.z\=\=5000, t.w\=\=7，可以发现云层的高度起伏已经很不明显了_
 
-![image-20230331194932555](..\..\images\Rendering\Archives\VolumeCloud\004.png)
+![image-20230331194932555](../../images\Rendering\Archives\VolumeCloud\004.png)
 _t.z\=\=5000, t.w\=\=100，可以说，云层完全失去了高度起伏的感觉并且模糊不堪_
 
 通过以上的对比我们可以发现：当我们不断的增大 LOD 时，云层开始变得越来越模糊，并在 LOD 过大时变得缺乏高度感——也就是说，我们。
@@ -159,7 +159,7 @@ HLSL 的解决方案是换用面向对象的 `SampleLevel` 函数，而它的使
 
 特别的，`tex2Dlod` 和 `SAMPLER_TEXTURE2D_LOD` 会被专门用在循环当中，例如在本案例中，如果使用 `tex2D` 和 `SAMPLER_TEXTURE2D` 则会报错：
 
-![image-20230331201010767](..\..\images\Rendering\Archives\VolumeCloud\005.png)
+![image-20230331201010767](../../images\Rendering\Archives\VolumeCloud\005.png)
 
 > 该问题的出现原因可以参考该回答：[unity3d - Why I can't use tex2D inside a loop in Unity ShaderLab? - Stack Overflow](https://stackoverflow.com/questions/57994423/why-i-cant-use-tex2d-inside-a-loop-in-unity-shaderlab)
 > 不严谨地简化解释为：循环中的计算单元不能预测采样的 LOD 值导致了单元间独立而庞大的计算，使循环不能及时地退出进而导致错误

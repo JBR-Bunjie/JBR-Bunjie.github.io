@@ -43,7 +43,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 得表：
 
-![img](..\..\..\images\Algorithm\bg2013050109.png)
+![img](../../../images\Algorithm\bg2013050109.png)
 
 ## KMP算法的Python实现：
 

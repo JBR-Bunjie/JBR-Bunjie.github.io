@@ -11,11 +11,11 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 ---
 一般来说，GitHub主页是很简陋枯燥又单调的：
 
-![image-20210907192522519](..\..\..\images\Deploy\image-20210907192522519.png)
+![image-20210907192522519](../../../images\Deploy\image-20210907192522519.png)
 
 但是也许你也见过别人的完全不同的主页：
 
-![img](..\..\..\images\Deploy\blog20201003163321.png)
+![img](../../../images\Deploy\blog20201003163321.png)
 
 欸？他的主页怎么有一个markdown文件作为公示栏来展示？怎么做到的？
 
@@ -23,7 +23,7 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 当↗当↗当↗当↘
 
-![image-20210907193059189](..\..\..\images\Deploy\image-20210907193059189.png)
+![image-20210907193059189](../../../images\Deploy\image-20210907193059189.png)
 
 > 请注意：你需要创建一个公共仓库，这样才会被GitHub所捕捉到，如果这是私密仓库的话是不会在主页上出现的
 

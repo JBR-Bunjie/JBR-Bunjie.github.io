@@ -15,18 +15,10 @@ cover: https://raw.githubusercontent.com/JBR-Bunjie/JBR-Bunjie/main/back.jpg
 
 ### 关于网络模型
 
-![image-20231106225117112](..\..\..\images\Dev\image-20231106225117112.png)
+![image-20231106225117112](../../../images\Dev\image-20231106225117112.png)
 其中，TCP/IP模型是实际的使用规则，HTTP协议就运作在应用层里
 
 ## 从HTTP协议开始
-
-> **UnityWebRequest**
->
-> Provides methods to communicate with web servers.
->
-> `UnityWebRequest` handles the flow of HTTP communication with web servers. To download and upload data, use [DownloadHandler](https://docs.unity3d.com/ScriptReference/Networking.DownloadHandler.html) and [UploadHandler](https://docs.unity3d.com/ScriptReference/Networking.UploadHandler.html) respectively.
->
-> https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.html
 
 ### 什么是HTTP
 
@@ -165,11 +157,11 @@ HTTPS 即 HTTP over TLS，是一种在加密信道进行 HTTP 内容传输的协
 
 三次握手：
 
-![image-20231106234220228](..\..\..\images\Dev\image-20231106234220228.png)
+![image-20231106234220228](../../../images\Dev\image-20231106234220228.png)
 
 四次挥手：
 
-![image-20231106234251959](..\..\..\images\Dev\image-20231106234251959.png)
+![image-20231106234251959](../../../images\Dev\image-20231106234251959.png)
 
 握手过程可见：https://hit-alibaba.github.io/interview/basic/network/TCP.html
 
@@ -304,6 +296,18 @@ Mirror可以参考的设计有很多
 > [Socket 编程 · 笔试面试知识整理 (hit-alibaba.github.io)](https://hit-alibaba.github.io/interview/basic/network/Socket-Programming-Basic.html)
 
 - [网络游戏实战:01-网络请求 - CodeFish'Blogs](https://blog.codefish.net/2022/10/17/net-game-netgame-action-01-networkrequest/)
+
+## UnityWebRequests
+
+> **UnityWebRequest**
+>
+> Provides methods to communicate with web servers.
+>
+> `UnityWebRequest` handles the flow of HTTP communication with web servers. To download and upload data, use [DownloadHandler](https://docs.unity3d.com/ScriptReference/Networking.DownloadHandler.html) and [UploadHandler](https://docs.unity3d.com/ScriptReference/Networking.UploadHandler.html) respectively.
+>
+> https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.html
+
+
 
 ## References
 
